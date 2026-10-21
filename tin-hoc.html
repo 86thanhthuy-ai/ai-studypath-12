@@ -1,65 +1,187 @@
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="AI StudyPath 12 - Website hỗ trợ ôn thi tốt nghiệp THPT và hướng nghiệp">
-  <title>AI StudyPath 12 | Ôn thi THPT</title>
-  <style>
-    :root { --blue:#2458a6; --light:#eef5ff; --ink:#19304a; --muted:#52647b; }
-    * { box-sizing:border-box; }
-    body { margin:0; font-family:Arial,Helvetica,sans-serif; background:#f7faff; color:var(--ink); line-height:1.6; }
-    header { background:linear-gradient(120deg,#2458a6,#408cbb); color:white; padding:48px 20px; text-align:center; }
-    header h1 { margin:0 0 8px; font-size:clamp(28px,5vw,42px); }
-    header p { margin:0 auto; max-width:700px; }
-    nav { background:white; padding:14px; text-align:center; box-shadow:0 2px 8px #1b467015; }
-    nav a { display:inline-block; margin:4px 10px; color:var(--blue); text-decoration:none; font-weight:bold; }
-    nav a:hover,nav a:focus { text-decoration:underline; }
-    main { max-width:1100px; margin:auto; padding:30px 18px; }
-    h2 { color:var(--blue); }
-    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px; }
-    .card { background:white; border:1px solid #e2eaf5; border-radius:16px; padding:22px; box-shadow:0 4px 14px #21416b0b; }
-    .card h3 { margin-top:0; }
-    .tag { display:inline-block; background:var(--light); color:var(--blue); border-radius:20px; padding:5px 12px; font-size:13px; font-weight:bold; }
-    .notice { background:#fff9e9; border-left:4px solid #d5a63d; padding:14px 18px; border-radius:8px; margin-top:24px; }
-    footer { text-align:center; background:#e9f0f9; padding:20px; color:var(--muted); }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ôn tập Tin học 12 | AI StudyPath 12</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f7faff;color:#19304a;line-height:1.65}
+header{background:linear-gradient(120deg,#2458a6,#408cbb);color:white;text-align:center;padding:42px 16px}
+header h1{margin:0}
+nav{background:white;padding:15px;text-align:center}
+nav a{display:inline-block;margin:5px 12px;color:#2458a6;font-weight:bold;text-decoration:none}
+main{max-width:1100px;margin:auto;padding:24px 18px}
+section{margin-bottom:32px}
+h2{color:#2458a6}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{background:white;padding:22px;border:1px solid #e1e8f3;border-radius:15px;margin-bottom:12px}
+.card h3{margin-top:0}
+.tag{display:inline-block;background:#e9f2ff;color:#2458a6;padding:6px 12px;border-radius:20px;font-size:13px}
+.question{padding:14px 0;border-bottom:1px solid #e1e8f3}
+.question label{display:block;padding:4px}
+button{background:#2458a6;color:white;border:0;padding:12px 20px;border-radius:8px;cursor:pointer}
+button:hover{background:#17427e}
+#ketqua{font-weight:bold;color:#2458a6}
+footer{text-align:center;background:#e9f0f9;padding:20px}
+</style>
 </head>
+
 <body>
-  <header>
-    <h1>🎓 AI StudyPath 12</h1>
-    <p>Hệ thống hỗ trợ ôn thi tốt nghiệp THPT cá nhân hóa và định hướng nghề nghiệp</p>
-  </header>
-  <nav aria-label="Điều hướng chính">
-    <a href="#monhoc">Môn học</a>
-    <a href="#chucnang">Chức năng</a>
-    <a href="#gioithieu">Giới thiệu</a>
-  </nav>
-  <main>
-    <section id="monhoc">
-      <h2>📚 Ôn tập theo môn học</h2>
-      <div class="grid">
-        <article class="card"><h3>📐 Toán</h3><p>Hệ thống kiến thức và bài tập theo chủ đề.</p><a class="tag" href="toan.html">Vào ôn tập →</a></article>
-        <article class="card"><h3>📖 Ngữ văn</h3><p>Ôn đọc hiểu, nghị luận và kỹ năng làm bài.</p><a class="tag" href="ngu-van.html">Vào ôn tập →</a></article>
-        <article class="card"><h3>🌍 Tiếng Anh</h3><p>Ôn từ vựng, ngữ pháp và luyện tập.</p><a class="tag" href="tieng-anh.html">Vào ôn tập →</a></article>
-        <article class="card"><h3>💻 Tin học</h3><p>Ôn lý thuyết, trắc nghiệm và luyện đề.</p><a class="tag" href="tin-hoc.html">Vào ôn tập →</a></article>
-      </div>
-    </section>
-    <section id="chucnang">
-      <h2>✨ Chức năng dự kiến</h2>
-      <div class="grid">
-        <article class="card"><h3>📝 Luyện tập và thi thử</h3><p>Câu hỏi trắc nghiệm, Đúng – Sai và đề luyện tập.</p></article>
-        <article class="card"><h3>🤖 Chatbot AI</h3><p>Giải thích bài học và gợi ý cách giải.</p></article>
-        <article class="card"><h3>📊 Cá nhân hóa</h3><p>Phân tích lỗi sai để đề xuất nội dung ôn tập.</p></article>
-        <article class="card"><h3>🧭 Hướng nghiệp</h3><p>Khám phá sở thích, ngành học và nghề nghiệp.</p></article>
-      </div>
-      <p class="notice"><strong>Thông báo:</strong> Đây là giao diện thử nghiệm. Các chức năng AI, tài khoản và lưu tiến trình chưa được kích hoạt. Không nhập thông tin cá nhân.</p>
-    </section>
-    <section id="gioithieu">
-      <h2>🌱 Giới thiệu dự án</h2>
-      <p>AI StudyPath 12 là dự án nghiên cứu khoa học kỹ thuật do giáo viên hướng dẫn và học sinh cùng phát triển, nhằm tìm hiểu hiệu quả của lộ trình ôn tập cá nhân hóa trong hỗ trợ học sinh lớp 12.</p>
-    </section>
-  </main>
-  <footer>AI StudyPath 12 · Bản thử nghiệm năm học 2026–2027</footer>
+<header>
+<h1>💻 Ôn tập Tin học 12</h1>
+<p>Kết nối tri thức – Định hướng Tin học ứng dụng</p>
+<p>AI StudyPath 12</p>
+</header>
+
+<nav>
+<a href="index.html">← Trang chủ</a>
+<a href="#chude">Chủ đề</a>
+<a href="#video">Video</a>
+<a href="#luyentap">Luyện tập</a>
+<a href="#chatbot">Chatbot AI</a>
+</nav>
+
+<main>
+<section id="chude">
+<h2>📚 Ôn tập theo chủ đề</h2>
+
+<div class="grid">
+<article class="card">
+<h3>1. Trí tuệ nhân tạo (AI)</h3>
+<p>Khái niệm AI, khả năng của AI,
+ứng dụng và những vấn đề cần lưu ý
+khi sử dụng AI.</p>
+<span class="tag">Có kiến thức mẫu</span>
+</article>
+
+<article class="card">
+<h3>2. Mạng máy tính và Internet</h3>
+<p>Thiết bị mạng thông dụng,
+giao thức mạng và chia sẻ tài nguyên.</p>
+<span class="tag">Có kiến thức mẫu</span>
+</article>
+
+<article class="card">
+<h3>3. HTML và CSS</h3>
+<p>Cấu trúc trang web, thẻ HTML,
+định dạng và trình bày bằng CSS.</p>
+<span class="tag">Có kiến thức mẫu</span>
+</article>
+
+<article class="card">
+<h3>4. Tạo trang web</h3>
+<p>Thiết kế, xây dựng và hoàn thiện
+trang web bằng công cụ phù hợp.</p>
+<span class="tag">Đang biên soạn</span>
+</article>
+</div>
+</section>
+
+<section>
+<h2>📖 Kiến thức trọng tâm mẫu</h2>
+<div class="card">
+<h3>Trí tuệ nhân tạo</h3>
+<p>Trí tuệ nhân tạo là lĩnh vực nghiên cứu
+và phát triển các hệ thống máy tính
+có khả năng thực hiện những nhiệm vụ
+thường cần đến trí tuệ con người.</p>
+<p>Ví dụ: nhận dạng tiếng nói,
+nhận dạng hình ảnh và hỗ trợ tìm kiếm.</p>
+</div>
+
+<div class="card">
+<h3>HTML và CSS</h3>
+<p><strong>HTML</strong> dùng để xây dựng
+cấu trúc và nội dung trang web.</p>
+<p><strong>CSS</strong> dùng để quy định
+cách trình bày các phần tử HTML.</p>
+</div>
+</section>
+
+<section id="video">
+<h2>🎬 Video bài giảng</h2>
+<div class="card">
+<p>Video bài giảng Tin học 12 sẽ được
+bổ sung theo từng bài học.</p>
+</div>
+</section>
+
+<section id="luyentap">
+<h2>📝 Luyện tập trắc nghiệm</h2>
+<p>Ba câu hỏi mẫu để thử chức năng chấm điểm.</p>
+
+<div class="card">
+<div class="question">
+<p><strong>Câu 1.</strong> AI là viết tắt của thuật ngữ nào?</p>
+<label><input type="radio" name="q1" value="A"> A. Artificial Intelligence</label>
+<label><input type="radio" name="q1" value="B"> B. Automatic Internet</label>
+<label><input type="radio" name="q1" value="C"> C. Advanced Information</label>
+<label><input type="radio" name="q1" value="D"> D. Applied Interface</label>
+</div>
+
+<div class="question">
+<p><strong>Câu 2.</strong> HTML chủ yếu được dùng để làm gì?</p>
+<label><input type="radio" name="q2" value="A"> A. Tạo hệ điều hành</label>
+<label><input type="radio" name="q2" value="B"> B. Xây dựng cấu trúc trang web</label>
+<label><input type="radio" name="q2" value="C"> C. Quản lí bộ nhớ máy tính</label>
+<label><input type="radio" name="q2" value="D"> D. Quét virus</label>
+</div>
+
+<div class="question">
+<p><strong>Câu 3.</strong> CSS có vai trò nào sau đây?</p>
+<label><input type="radio" name="q3" value="A"> A. Thay thế hoàn toàn HTML</label>
+<label><input type="radio" name="q3" value="B"> B. Kết nối máy tính với Internet</label>
+<label><input type="radio" name="q3" value="C"> C. Định dạng cách trình bày trang web</label>
+<label><input type="radio" name="q3" value="D"> D. Cài đặt hệ điều hành</label>
+</div>
+
+<br>
+<button onclick="chamDiem()">Nộp bài và xem điểm</button>
+<p id="ketqua" aria-live="polite"></p>
+</div>
+</section>
+
+<section id="chatbot">
+<h2>🤖 Chatbot AI Tutor Tin học 12</h2>
+<div class="card">
+<p>Khu vực dành cho chatbot AI Tutor
+đã xây dựng trên Google AI Studio.</p>
+<p>Hiện chưa tích hợp chatbot vào website.</p>
+<p>Ứng dụng AI Tutor gốc vẫn được giữ riêng,
+không thay đổi dữ liệu hoặc cấu hình.</p>
+</div>
+</section>
+</main>
+
+<footer>AI StudyPath 12 – Năm học 2026–2027</footer>
+
+<script>
+function chamDiem(){
+  const dapAn = {q1:"A",q2:"B",q3:"C"};
+  let diem = 0;
+  let soCauDaLam = 0;
+
+  for(const cau in dapAn){
+    const luaChon = document.querySelector(
+      'input[name="'+cau+'"]:checked'
+    );
+
+    if(luaChon){
+      soCauDaLam++;
+      if(luaChon.value === dapAn[cau]){
+        diem++;
+      }
+    }
+  }
+
+  const ketqua = document.getElementById("ketqua");
+  ketqua.textContent =
+    "Bạn đã làm " + soCauDaLam +
+    "/3 câu. Kết quả: " + diem +
+    "/3 câu đúng. Đáp án: 1A, 2B, 3C.";
+}
+</script>
 </body>
 </html>
