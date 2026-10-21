@@ -2,141 +2,424 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ôn t?p Toán | AI StudyPath 12</title>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f8ff;
-      color: #19304a;
-      line-height: 1.6;
-    }
-    header {
-      background: linear-gradient(120deg, #2458a6, #408cbb);
-      color: white;
-      text-align: center;
-      padding: 45px 20px;
-    }
-    header h1 { margin: 0; }
-    nav {
-      background: white;
-      padding: 15px;
-      text-align: center;
-    }
-    nav a {
-      color: #2458a6;
-      margin: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      display: inline-block;
-    }
-    main {
-      max-width: 1100px;
-      margin: auto;
-      padding: 25px;
-    }
-    h2 { color: #2458a6; }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 18px;
-    }
-    .card {
-      background: white;
-      padding: 22px;
-      border-radius: 15px;
-      border: 1px solid #e1e8f3;
-      box-shadow: 0 4px 12px #19304a10;
-    }
-    .tag {
-      display: inline-block;
-      background: #e9f2ff;
-      padding: 6px 12px;
-      border-radius: 20px;
-      color: #2458a6;
-      font-size: 13px;
-    }
-    section { margin-bottom: 35px; }
-    footer {
-      background: #e9f0f9;
-      padding: 20px;
-      text-align: center;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ôn tập Toán 12 - AI StudyPath 12">
+    <title>Ôn tập Toán 12 | AI StudyPath 12</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f8ff;
+            color: #19304a;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(120deg, #2458a6, #408cbb);
+            color: white;
+            padding: 45px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 10px;
+            font-size: 34px;
+        }
+
+        header p {
+            margin: 0;
+        }
+
+        nav {
+            background-color: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 8px #19304a15;
+        }
+
+        nav a {
+            display: inline-block;
+            margin: 5px 12px;
+            color: #2458a6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 25px 18px;
+        }
+
+        section {
+            margin-bottom: 38px;
+        }
+
+        h2 {
+            color: #2458a6;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit, minmax(240px, 1fr)
+            );
+            gap: 18px;
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid #e1e8f3;
+            border-radius: 15px;
+            padding: 22px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 12px #19304a10;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #19304a;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #e9f2ff;
+            color: #2458a6;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .question {
+            padding: 15px 0;
+            border-bottom: 1px solid #e1e8f3;
+        }
+
+        .question label {
+            display: block;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        button {
+            background-color: #2458a6;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 22px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #17427e;
+        }
+
+        #ketqua {
+            font-weight: bold;
+            color: #2458a6;
+            margin-top: 18px;
+        }
+
+        footer {
+            background-color: #e9f0f9;
+            text-align: center;
+            padding: 20px;
+            color: #52647b;
+        }
+    </style>
 </head>
 
 <body>
-  <header>
-    <h1>?? Ôn t?p Toán 12</h1>
-    <p>AI StudyPath 12 – H? tr? ôn thi t?t nghi?p THPT</p>
-  </header>
 
-  <nav>
-    <a href="index.html">? Trang ch?</a>
-    <a href="#chude">Ch? d?</a>
-    <a href="#video">Video</a>
-    <a href="#luyentap">Luy?n t?p</a>
-    <a href="#chatbot">Chatbot AI</a>
-  </nav>
+    <header>
+        <h1>📐 Ôn tập Toán 12</h1>
+        <p>
+            AI StudyPath 12 – Hỗ trợ ôn thi
+            tốt nghiệp THPT
+        </p>
+    </header>
 
-  <main>
-    <section id="chude">
-      <h2>?? Ôn t?p theo ch? d?</h2>
-      <div class="grid">
-        <article class="card">
-          <h3>1. Hàm s? và ?ng d?ng</h3>
-          <p>Ôn t?p d?o hàm, kh?o sát hàm s?
-          và các bài toán ?ng d?ng.</p>
-          <span class="tag">Ðang biên so?n</span>
-        </article>
+    <nav>
+        <a href="index.html">← Trang chủ</a>
+        <a href="#chude">Chủ đề</a>
+        <a href="#video">Video bài giảng</a>
+        <a href="#luyentap">Luyện tập</a>
+        <a href="#chatbot">Chatbot AI</a>
+    </nav>
 
-        <article class="card">
-          <h3>2. Hình h?c và t?a d?</h3>
-          <p>Ôn công th?c, phuong pháp gi?i
-          và các d?ng bài t?p.</p>
-          <span class="tag">Ðang biên so?n</span>
-        </article>
+    <main>
 
-        <article class="card">
-          <h3>3. Xác su?t và th?ng kê</h3>
-          <p>Luy?n các bài toán xác su?t,
-          d?c và phân tích d? li?u.</p>
-          <span class="tag">Ðang biên so?n</span>
-        </article>
-      </div>
-    </section>
+        <!-- PHẦN 1: ÔN TẬP THEO CHỦ ĐỀ -->
 
-    <section id="video">
-      <h2>?? Video bài gi?ng</h2>
-      <div class="card">
-        <p>Video bài gi?ng s? du?c b? sung
-        theo t?ng ch? d?.</p>
-      </div>
-    </section>
+        <section id="chude">
+            <h2>📚 Ôn tập theo chủ đề</h2>
 
-    <section id="luyentap">
-      <h2>?? Luy?n t?p và thi th?</h2>
-      <div class="card">
-        <p>H? th?ng câu h?i và d? luy?n t?p
-        dang du?c xây d?ng.</p>
-      </div>
-    </section>
+            <p>
+                Hệ thống kiến thức trọng tâm
+                môn Toán lớp 12.
+            </p>
 
-    <section id="chatbot">
-      <h2>?? Chatbot AI h? tr? h?c t?p</h2>
-      <div class="card">
-        <p>Chatbot AI môn Toán chua du?c tích h?p.</p>
-        <p>Không nh?p thông tin cá nhân
-        ho?c khóa API vào website.</p>
-      </div>
-    </section>
-  </main>
+            <div class="grid">
 
-  <footer>
-    AI StudyPath 12 – Nam h?c 2026–2027
-  </footer>
+                <article class="card">
+                    <h3>Chủ đề 1. Hàm số và ứng dụng</h3>
+                    <p>
+                        Đạo hàm, tính đơn điệu,
+                        cực trị, giá trị lớn nhất,
+                        giá trị nhỏ nhất và
+                        khảo sát hàm số.
+                    </p>
+                    <span class="tag">
+                        Đang biên soạn bài học
+                    </span>
+                </article>
+
+                <article class="card">
+                    <h3>Chủ đề 2. Hình học và tọa độ</h3>
+                    <p>
+                        Vectơ trong không gian,
+                        tọa độ điểm, đường thẳng,
+                        mặt phẳng và các bài toán
+                        hình học không gian.
+                    </p>
+                    <span class="tag">
+                        Đang biên soạn bài học
+                    </span>
+                </article>
+
+                <article class="card">
+                    <h3>Chủ đề 3. Xác suất và thống kê</h3>
+                    <p>
+                        Các số đặc trưng của mẫu
+                        số liệu, xác suất có điều kiện
+                        và những bài toán thực tế.
+                    </p>
+                    <span class="tag">
+                        Đang biên soạn bài học
+                    </span>
+                </article>
+
+                <article class="card">
+                    <h3>Chủ đề 4. Nguyên hàm và tích phân</h3>
+                    <p>
+                        Nguyên hàm, tích phân,
+                        các tính chất và ứng dụng
+                        trong giải toán.
+                    </p>
+                    <span class="tag">
+                        Đang biên soạn bài học
+                    </span>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- PHẦN 2: VIDEO BÀI GIẢNG -->
+
+        <section id="video">
+            <h2>🎬 Video bài giảng</h2>
+
+            <div class="card">
+                <h3>Thư viện video Toán 12</h3>
+                <p>
+                    Video sẽ được sắp xếp
+                    theo từng chủ đề để học sinh
+                    dễ dàng ôn tập.
+                </p>
+                <p>
+                    Hiện chưa gắn video.
+                    Nội dung sẽ được bổ sung
+                    trong các bước tiếp theo.
+                </p>
+            </div>
+        </section>
+
+        <!-- PHẦN 3: LUYỆN TẬP -->
+
+        <section id="luyentap">
+            <h2>📝 Luyện tập trắc nghiệm</h2>
+
+            <p>
+                Học sinh chọn đáp án và nhấn
+                nút Nộp bài để xem kết quả.
+            </p>
+
+            <div class="card">
+
+                <div class="question">
+                    <p>
+                        <strong>Câu 1.</strong>
+                        Đạo hàm của hàm số
+                        y = x² là:
+                    </p>
+
+                    <label>
+                        <input type="radio" name="q1" value="A">
+                        A. 2x
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q1" value="B">
+                        B. x
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q1" value="C">
+                        C. x³
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q1" value="D">
+                        D. 2
+                    </label>
+                </div>
+
+                <div class="question">
+                    <p>
+                        <strong>Câu 2.</strong>
+                        Giá trị của 2³ là:
+                    </p>
+
+                    <label>
+                        <input type="radio" name="q2" value="A">
+                        A. 6
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q2" value="B">
+                        B. 8
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q2" value="C">
+                        C. 9
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q2" value="D">
+                        D. 12
+                    </label>
+                </div>
+
+                <div class="question">
+                    <p>
+                        <strong>Câu 3.</strong>
+                        Nguyên hàm của hàm số
+                        f(x) = 2x là:
+                    </p>
+
+                    <label>
+                        <input type="radio" name="q3" value="A">
+                        A. 2 + C
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q3" value="B">
+                        B. 2x + C
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q3" value="C">
+                        C. x² + C
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q3" value="D">
+                        D. x³ + C
+                    </label>
+                </div>
+
+                <br>
+
+                <button type="button" onclick="chamDiem()">
+                    Nộp bài và xem kết quả
+                </button>
+
+                <p id="ketqua" aria-live="polite"></p>
+
+            </div>
+        </section>
+
+        <!-- PHẦN 4: CHATBOT AI -->
+
+        <section id="chatbot">
+            <h2>🤖 Chatbot AI hỗ trợ học Toán</h2>
+
+            <div class="card">
+                <h3>Trợ lý học tập Toán 12</h3>
+
+                <p>
+                    Dự kiến chatbot sẽ hỗ trợ
+                    giải thích kiến thức,
+                    hướng dẫn giải bài tập
+                    và gợi ý nội dung ôn tập.
+                </p>
+
+                <p>
+                    Chức năng chatbot AI
+                    hiện chưa được tích hợp.
+                </p>
+
+                <p>
+                    Không nhập thông tin cá nhân
+                    hoặc khóa API vào website.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        AI StudyPath 12 – Bản thử nghiệm
+        năm học 2026–2027
+    </footer>
+
+    <script>
+        function chamDiem() {
+            const dapAn = {
+                q1: "A",
+                q2: "B",
+                q3: "C"
+            };
+
+            let soCauDung = 0;
+            let soCauDaLam = 0;
+
+            for (const cau in dapAn) {
+                const luaChon = document.querySelector(
+                    'input[name="' + cau + '"]:checked'
+                );
+
+                if (luaChon) {
+                    soCauDaLam++;
+
+                    if (luaChon.value === dapAn[cau]) {
+                        soCauDung++;
+                    }
+                }
+            }
+
+            const ketqua = document.getElementById("ketqua");
+
+            ketqua.textContent =
+                "Bạn đã làm " + soCauDaLam +
+                "/3 câu. Số câu đúng: " +
+                soCauDung + "/3. " +
+                "Đáp án: Câu 1A, Câu 2B, Câu 3C.";
+        }
+    </script>
+
 </body>
 </html>
