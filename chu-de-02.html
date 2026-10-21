@@ -1,9 +1,10 @@
 
 <!DOCTYPE html>
+
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Ôn tập Tin học 12 | AI StudyPath 12</title>
 <style>
 *{box-sizing:border-box}
@@ -34,15 +35,13 @@ fieldset{border:1px solid #e1e8f3;border-radius:10px;margin:15px 0;padding:15px}
 legend{font-weight:bold}
 fieldset label{display:block;margin:7px 0;cursor:pointer}
 </style>
-</head>
-
+<style>.practice-result{display:none!important}.practice-card label{cursor:pointer}.practice-card input{accent-color:#2458a6}article.content [style*="color: #ff0000"],article.content [style*="color:#ff0000"],article.content [style*="color: red"],article.content [style*="color:red"]{color:inherit!important}</style><style>.practice-card label{display:block;border:1px solid #dce6f2;border-radius:9px;padding:9px 12px;margin:8px 0;cursor:pointer}.practice-card label:has(input:checked){background:#e8f2ff;border-color:#3876bc}.practice-card input[type=radio]{accent-color:#2458a6;margin-right:8px}.practice-result{display:none!important}.source-answer{color:inherit!important;font-weight:inherit!important}</style></head>
 <body><nav style="padding:12px;text-align:center;background:#eef4ff"><a href="tai-lieu-tin-hoc.html">← Quay lại danh sách chủ đề</a></nav>
 <header>
 <h1>💻 Ôn tập Tin học 12</h1>
 <p>Kết nối tri thức – Định hướng Tin học ứng dụng</p>
 <p>AI StudyPath 12</p>
 </header>
-
 <nav>
 <a href="index.html">← Trang chủ</a>
 <a href="#chude">Chủ đề</a>
@@ -51,11 +50,9 @@ fieldset label{display:block;margin:7px 0;cursor:pointer}
 <a href="#luyentap">Luyện tập</a>
 <a href="#chatbot">Chatbot AI</a>
 </nav>
-
 <main>
 <section id="chude">
 <h2>📚 Ôn tập theo chủ đề</h2>
-
 <div class="grid">
 <article class="card">
 <h3>1. Trí tuệ nhân tạo (AI)</h3>
@@ -64,21 +61,18 @@ fieldset label{display:block;margin:7px 0;cursor:pointer}
 khi sử dụng AI.</p>
 <span class="tag">Có kiến thức mẫu</span>
 </article>
-
 <article class="card">
 <h3>2. Mạng máy tính và Internet</h3>
 <p>Thiết bị mạng thông dụng,
 giao thức mạng và chia sẻ tài nguyên.</p>
 <span class="tag">Có kiến thức mẫu</span>
 </article>
-
 <article class="card">
 <h3>3. HTML và CSS</h3>
 <p>Cấu trúc trang web, thẻ HTML,
 định dạng và trình bày bằng CSS.</p>
 <span class="tag">Có kiến thức mẫu</span>
 </article>
-
 <article class="card">
 <h3>4. Tạo trang web</h3>
 <p>Thiết kế, xây dựng và hoàn thiện
@@ -87,7 +81,6 @@ trang web bằng công cụ phù hợp.</p>
 </article>
 </div>
 </section>
-
 <section>
 <h2>📖 Kiến thức trọng tâm mẫu</h2>
 <div class="card">
@@ -99,7 +92,6 @@ thường cần đến trí tuệ con người.</p>
 <p>Ví dụ: nhận dạng tiếng nói,
 nhận dạng hình ảnh và hỗ trợ tìm kiếm.</p>
 </div>
-
 <div class="card">
 <h3>HTML và CSS</h3>
 <p><strong>HTML</strong> dùng để xây dựng
@@ -108,8 +100,6 @@ cấu trúc và nội dung trang web.</p>
 cách trình bày các phần tử HTML.</p>
 </div>
 </section>
-
-
 <section id="ai-buoi4"><h2>🧠 Chủ đề 12A – Giới thiệu trí tuệ nhân tạo</h2>
 <div class="card"><p><strong>Nguồn:</strong> Tài liệu ôn tập tốt nghiệp THPT năm học 2025–2026, Bộ môn Tin học, Chủ đề 12A.</p>
 <h3>Kiến thức trọng tâm</h3><p><strong>AI:</strong> Khả năng của máy tính thực hiện những công việc mang tính trí tuệ như học tập, suy luận, giải quyết vấn đề và hiểu ngôn ngữ.</p>
@@ -119,7 +109,7 @@ cách trình bày các phần tử HTML.</p>
 <p><strong>Rủi ro:</strong> Quyền riêng tư, thông tin sai lệch, giả mạo và các vấn đề đạo đức.</p></div>
 <div class="card"><h3>Phần 1 – Trắc nghiệm chọn một đáp án</h3><p id="mcq-count"></p><div id="ai-mcq-list"></div></div>
 <div class="card"><h3>Phần 2 – Tình huống Đúng – Sai</h3><p>Mỗi tình huống có bốn ý a, b, c, d.</p><div id="ai-tf-list"></div></div>
-<div class="card"><button type="button" onclick="gradeBank()">Nộp bài và xem kết quả</button> <button type="button" onclick="resetBank()" style="background:#52647b">Làm lại</button><div id="bank-result" class="answer-feedback" aria-live="polite">Chọn đáp án, sau đó nhấn Nộp bài để xem kết quả.</div></div></section>
+<div class="card"><button onclick="gradeBank()" type="button">Nộp bài và xem kết quả</button> <button onclick="resetBank()" style="background:#52647b" type="button">Làm lại</button><div aria-live="polite" class="answer-feedback" id="bank-result">Chọn đáp án, sau đó nhấn Nộp bài để xem kết quả.</div></div></section>
 <section id="video">
 <h2>🎬 Video bài giảng</h2>
 <div class="card">
@@ -127,42 +117,36 @@ cách trình bày các phần tử HTML.</p>
 bổ sung theo từng bài học.</p>
 </div>
 </section>
-
 <section id="luyentap">
 <h2>📝 Luyện tập trắc nghiệm</h2>
 <p>Ba câu hỏi mẫu để thử chức năng chấm điểm.</p>
-
 <div class="card">
 <div class="question">
 <p><strong>Câu 1.</strong> AI là viết tắt của thuật ngữ nào?</p>
-<label><input type="radio" name="q1" value="A"> A. Artificial Intelligence</label>
-<label><input type="radio" name="q1" value="B"> B. Automatic Internet</label>
-<label><input type="radio" name="q1" value="C"> C. Advanced Information</label>
-<label><input type="radio" name="q1" value="D"> D. Applied Interface</label>
+<label><input name="q1" type="radio" value="A"/> A. Artificial Intelligence</label>
+<label><input name="q1" type="radio" value="B"/> B. Automatic Internet</label>
+<label><input name="q1" type="radio" value="C"/> C. Advanced Information</label>
+<label><input name="q1" type="radio" value="D"/> D. Applied Interface</label>
 </div>
-
 <div class="question">
 <p><strong>Câu 2.</strong> HTML chủ yếu được dùng để làm gì?</p>
-<label><input type="radio" name="q2" value="A"> A. Tạo hệ điều hành</label>
-<label><input type="radio" name="q2" value="B"> B. Xây dựng cấu trúc trang web</label>
-<label><input type="radio" name="q2" value="C"> C. Quản lí bộ nhớ máy tính</label>
-<label><input type="radio" name="q2" value="D"> D. Quét virus</label>
+<label><input name="q2" type="radio" value="A"/> A. Tạo hệ điều hành</label>
+<label><input name="q2" type="radio" value="B"/> B. Xây dựng cấu trúc trang web</label>
+<label><input name="q2" type="radio" value="C"/> C. Quản lí bộ nhớ máy tính</label>
+<label><input name="q2" type="radio" value="D"/> D. Quét virus</label>
 </div>
-
 <div class="question">
 <p><strong>Câu 3.</strong> CSS có vai trò nào sau đây?</p>
-<label><input type="radio" name="q3" value="A"> A. Thay thế hoàn toàn HTML</label>
-<label><input type="radio" name="q3" value="B"> B. Kết nối máy tính với Internet</label>
-<label><input type="radio" name="q3" value="C"> C. Định dạng cách trình bày trang web</label>
-<label><input type="radio" name="q3" value="D"> D. Cài đặt hệ điều hành</label>
+<label><input name="q3" type="radio" value="A"/> A. Thay thế hoàn toàn HTML</label>
+<label><input name="q3" type="radio" value="B"/> B. Kết nối máy tính với Internet</label>
+<label><input name="q3" type="radio" value="C"/> C. Định dạng cách trình bày trang web</label>
+<label><input name="q3" type="radio" value="D"/> D. Cài đặt hệ điều hành</label>
 </div>
-
-<br>
+<br/>
 <button onclick="chamDiem()">Nộp bài và xem điểm</button>
-<p id="ketqua" aria-live="polite"></p>
+<p aria-live="polite" id="ketqua"></p>
 </div>
 </section>
-
 <section id="chatbot">
 <h2>🤖 Chatbot AI Tutor Tin học 12</h2>
 <div class="card">
@@ -174,9 +158,7 @@ không thay đổi dữ liệu hoặc cấu hình.</p>
 </div>
 </section>
 </main>
-
 <footer>AI StudyPath 12 – Năm học 2026–2027</footer>
-
 <script>
 
 function chamDiem(){
