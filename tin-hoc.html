@@ -25,6 +25,12 @@ button{background:#2458a6;color:white;border:0;padding:12px 20px;border-radius:8
 button:hover{background:#17427e}
 #ketqua{font-weight:bold;color:#2458a6}
 footer{text-align:center;background:#e9f0f9;padding:20px}
+.lesson-note{background:#eef5ff;border-left:4px solid #2458a6;padding:12px 16px;border-radius:8px}
+.lesson-list{padding-left:22px}
+.answer-feedback{margin-top:12px;padding:12px;background:#eef5ff;border-radius:8px;white-space:pre-line}
+fieldset{border:1px solid #e1e8f3;border-radius:10px;margin:15px 0;padding:15px}
+legend{font-weight:bold}
+fieldset label{display:block;margin:7px 0;cursor:pointer}
 </style>
 </head>
 
@@ -38,6 +44,7 @@ footer{text-align:center;background:#e9f0f9;padding:20px}
 <nav>
 <a href="index.html">← Trang chủ</a>
 <a href="#chude">Chủ đề</a>
+<a href="#ai-buoi4">Học AI</a>
 <a href="#video">Video</a>
 <a href="#luyentap">Luyện tập</a>
 <a href="#chatbot">Chatbot AI</a>
@@ -46,7 +53,6 @@ footer{text-align:center;background:#e9f0f9;padding:20px}
 <main>
 <section id="chude">
 <h2>📚 Ôn tập theo chủ đề</h2>
-
 <div class="grid">
 <article class="card">
 <h3>1. Trí tuệ nhân tạo (AI)</h3>
@@ -100,19 +106,101 @@ cách trình bày các phần tử HTML.</p>
 </div>
 </section>
 
+<section id="ai-buoi4">
+<h2>🧠 Chủ đề A – Trí tuệ nhân tạo (AI)</h2>
+<p class="lesson-note"><strong>Buổi 4:</strong> Tìm hiểu kiến thức cơ bản về AI và tự kiểm tra mức độ hiểu bài. Đây là nội dung ôn tập mẫu, không phải đề thi chính thức.</p>
+
+<div class="card">
+<h3>1. Trí tuệ nhân tạo là gì?</h3>
+<p>Trí tuệ nhân tạo (Artificial Intelligence – AI) là lĩnh vực nghiên cứu và phát triển hệ thống máy tính có khả năng thực hiện một số công việc thường đòi hỏi trí tuệ con người, chẳng hạn như nhận dạng hình ảnh, hiểu ngôn ngữ hoặc hỗ trợ ra quyết định.</p>
+
+<h3>2. Một số khả năng và ứng dụng</h3>
+<ul class="lesson-list">
+<li><strong>Nhận dạng:</strong> Nhận dạng giọng nói, chữ viết, hình ảnh.</li>
+<li><strong>Xử lí ngôn ngữ:</strong> Hỗ trợ trả lời câu hỏi, dịch văn bản.</li>
+<li><strong>Học từ dữ liệu:</strong> Tìm quy luật trong dữ liệu để dự đoán hoặc gợi ý.</li>
+<li><strong>Ứng dụng:</strong> Gợi ý nội dung học tập, hỗ trợ chẩn đoán, nhận diện biển báo giao thông.</li>
+</ul>
+
+<h3>3. Sử dụng AI có trách nhiệm</h3>
+<p>Cần kiểm tra độ chính xác của kết quả do AI tạo ra; tôn trọng bản quyền, bảo vệ dữ liệu cá nhân và không phụ thuộc hoàn toàn vào AI khi học tập.</p>
+<p><strong>Ví dụ:</strong> Khi chatbot đưa ra lời giải, học sinh nên đối chiếu kiến thức đã học và tự kiểm tra các bước giải.</p>
+</div>
+
+<div class="card">
+<h3>📝 Phần A. Trắc nghiệm nhiều lựa chọn</h3>
+<form id="ai-quiz" onsubmit="return false;">
+
+<fieldset>
+<legend>Câu 1. Ví dụ nào thể hiện ứng dụng của AI?</legend>
+<label><input type="radio" name="ai1" value="A"> A. Bàn phím cơ thông thường</label>
+<label><input type="radio" name="ai1" value="B"> B. Phần mềm nhận dạng tiếng nói</label>
+<label><input type="radio" name="ai1" value="C"> C. Dây cáp mạng</label>
+<label><input type="radio" name="ai1" value="D"> D. Màn hình không có phần mềm xử lí</label>
+</fieldset>
+
+<fieldset>
+<legend>Câu 2. Khi sử dụng câu trả lời do AI tạo ra, cách làm nào phù hợp?</legend>
+<label><input type="radio" name="ai2" value="A"> A. Luôn coi là chính xác</label>
+<label><input type="radio" name="ai2" value="B"> B. Sao chép mà không đọc lại</label>
+<label><input type="radio" name="ai2" value="C"> C. Kiểm tra và đối chiếu với nguồn đáng tin cậy</label>
+<label><input type="radio" name="ai2" value="D"> D. Chia sẻ thông tin cá nhân để được trả lời nhanh</label>
+</fieldset>
+
+<fieldset>
+<legend>Câu 3. Khả năng nào sau đây có thể có ở hệ thống AI?</legend>
+<label><input type="radio" name="ai3" value="A"> A. Học từ dữ liệu để đưa ra dự đoán</label>
+<label><input type="radio" name="ai3" value="B"> B. Luôn đúng trong mọi tình huống</label>
+<label><input type="radio" name="ai3" value="C"> C. Không bao giờ cần dữ liệu</label>
+<label><input type="radio" name="ai3" value="D"> D. Thay thế hoàn toàn mọi quyết định của con người</label>
+</fieldset>
+
+<h3>☑️ Phần B. Đúng – Sai theo tình huống</h3>
+<p><strong>Tình huống:</strong> Lan dùng một công cụ AI để tìm hiểu bài học và kiểm tra lại thông tin trong sách giáo khoa trước khi sử dụng.</p>
+
+<fieldset>
+<legend>Ý a. Công cụ AI có thể hỗ trợ Lan giải thích kiến thức.</legend>
+<label><input type="radio" name="tf1" value="D"> Đúng</label>
+<label><input type="radio" name="tf1" value="S"> Sai</label>
+</fieldset>
+
+<fieldset>
+<legend>Ý b. Mọi thông tin do AI cung cấp đều chính xác tuyệt đối.</legend>
+<label><input type="radio" name="tf2" value="D"> Đúng</label>
+<label><input type="radio" name="tf2" value="S"> Sai</label>
+</fieldset>
+
+<fieldset>
+<legend>Ý c. Việc Lan đối chiếu thông tin với sách giáo khoa là phù hợp.</legend>
+<label><input type="radio" name="tf3" value="D"> Đúng</label>
+<label><input type="radio" name="tf3" value="S"> Sai</label>
+</fieldset>
+
+<fieldset>
+<legend>Ý d. Lan nên nhập mật khẩu tài khoản của mình vào chatbot để nhận được câu trả lời tốt hơn.</legend>
+<label><input type="radio" name="tf4" value="D"> Đúng</label>
+<label><input type="radio" name="tf4" value="S"> Sai</label>
+</fieldset>
+
+<button type="button" onclick="chamBaiAI()">Nộp bài chủ đề AI</button>
+<button type="reset" style="background:#52647b" onclick="document.getElementById('ai-ketqua').textContent='Chọn đáp án rồi nhấn Nộp bài chủ đề AI để xem kết quả.'">Làm lại</button>
+<div id="ai-ketqua" class="answer-feedback" aria-live="polite">Chọn đáp án rồi nhấn “Nộp bài chủ đề AI” để xem kết quả và giải thích.</div>
+</form>
+</div>
+</section>
+
 <section id="video">
 <h2>🎬 Video bài giảng</h2>
 <div class="card">
-<p>Video bài giảng Tin học 12 sẽ được
-bổ sung theo từng bài học.</p>
+<p>Video bài giảng Tin học 12 sẽ được bổ sung theo từng bài học.</p>
 </div>
 </section>
 
 <section id="luyentap">
 <h2>📝 Luyện tập trắc nghiệm</h2>
 <p>Ba câu hỏi mẫu để thử chức năng chấm điểm.</p>
-
 <div class="card">
+
 <div class="question">
 <p><strong>Câu 1.</strong> AI là viết tắt của thuật ngữ nào?</p>
 <label><input type="radio" name="q1" value="A"> A. Artificial Intelligence</label>
@@ -137,7 +225,6 @@ bổ sung theo từng bài học.</p>
 <label><input type="radio" name="q3" value="D"> D. Cài đặt hệ điều hành</label>
 </div>
 
-<br>
 <button onclick="chamDiem()">Nộp bài và xem điểm</button>
 <p id="ketqua" aria-live="polite"></p>
 </div>
@@ -146,11 +233,9 @@ bổ sung theo từng bài học.</p>
 <section id="chatbot">
 <h2>🤖 Chatbot AI Tutor Tin học 12</h2>
 <div class="card">
-<p>Khu vực dành cho chatbot AI Tutor
-đã xây dựng trên Google AI Studio.</p>
+<p>Khu vực dành cho chatbot AI Tutor đã xây dựng trên Google AI Studio.</p>
 <p>Hiện chưa tích hợp chatbot vào website.</p>
-<p>Ứng dụng AI Tutor gốc vẫn được giữ riêng,
-không thay đổi dữ liệu hoặc cấu hình.</p>
+<p>Ứng dụng AI Tutor gốc vẫn được giữ riêng, không thay đổi dữ liệu hoặc cấu hình.</p>
 </div>
 </section>
 </main>
@@ -158,28 +243,57 @@ không thay đổi dữ liệu hoặc cấu hình.</p>
 <footer>AI StudyPath 12 – Năm học 2026–2027</footer>
 
 <script>
+function chamBaiAI(){
+  const answers = {
+    ai1:["B","Nhận dạng tiếng nói là một ứng dụng AI."],
+    ai2:["C","Cần kiểm chứng kết quả do AI tạo ra."],
+    ai3:["A","Một số hệ thống AI có thể học quy luật từ dữ liệu."],
+    tf1:["D","AI có thể hỗ trợ giải thích kiến thức."],
+    tf2:["S","Kết quả của AI có thể có sai sót."],
+    tf3:["D","Đối chiếu với sách giáo khoa giúp kiểm chứng thông tin."],
+    tf4:["S","Không chia sẻ mật khẩu hay thông tin đăng nhập với chatbot."]
+  };
+
+  let correct=0,done=0;
+  const lines=[];
+
+  for(const [name,[answer,reason]] of Object.entries(answers)){
+    const selected=document.querySelector('input[name="'+name+'"]:checked');
+    if(selected){
+      done++;
+      if(selected.value===answer) correct++;
+    }
+    const display=answer==="D"?"Đúng":answer==="S"?"Sai":answer;
+    lines.push(
+      name.toUpperCase()+": "+
+      (selected?(selected.value===answer?"✓ Đúng":"✗ Chưa đúng"):"Chưa chọn")+
+      ". Đáp án: "+display+". "+reason
+    );
+  }
+
+  document.getElementById("ai-ketqua").textContent=
+    "Bạn đã làm "+done+"/7 ý; đúng "+correct+
+    "/7 ý.\n\n"+lines.join("\n");
+}
+
 function chamDiem(){
-  const dapAn = {q1:"A",q2:"B",q3:"C"};
-  let diem = 0;
-  let soCauDaLam = 0;
+  const dapAn={q1:"A",q2:"B",q3:"C"};
+  let diem=0;
+  let soCauDaLam=0;
 
   for(const cau in dapAn){
-    const luaChon = document.querySelector(
+    const luaChon=document.querySelector(
       'input[name="'+cau+'"]:checked'
     );
-
     if(luaChon){
       soCauDaLam++;
-      if(luaChon.value === dapAn[cau]){
-        diem++;
-      }
+      if(luaChon.value===dapAn[cau]) diem++;
     }
   }
 
-  const ketqua = document.getElementById("ketqua");
-  ketqua.textContent =
-    "Bạn đã làm " + soCauDaLam +
-    "/3 câu. Kết quả: " + diem +
+  document.getElementById("ketqua").textContent=
+    "Bạn đã làm "+soCauDaLam+
+    "/3 câu. Kết quả: "+diem+
     "/3 câu đúng. Đáp án: 1A, 2B, 3C.";
 }
 </script>
