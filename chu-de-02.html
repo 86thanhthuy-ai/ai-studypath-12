@@ -1,236 +1,340 @@
-
 <!DOCTYPE html>
 
-<html lang="vi">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Ôn tập Tin học 12 | AI StudyPath 12</title>
-<style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#f7faff;color:#19304a;line-height:1.65}
-header{background:linear-gradient(120deg,#2458a6,#408cbb);color:white;text-align:center;padding:42px 16px}
-header h1{margin:0}
-nav{background:white;padding:15px;text-align:center}
-nav a{display:inline-block;margin:5px 12px;color:#2458a6;font-weight:bold;text-decoration:none}
-main{max-width:1100px;margin:auto;padding:24px 18px}
-section{margin-bottom:32px}
-h2{color:#2458a6}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
-.card{background:white;padding:22px;border:1px solid #e1e8f3;border-radius:15px;margin-bottom:12px}
-.card h3{margin-top:0}
-.tag{display:inline-block;background:#e9f2ff;color:#2458a6;padding:6px 12px;border-radius:20px;font-size:13px}
-.question{padding:14px 0;border-bottom:1px solid #e1e8f3}
-.question label{display:block;padding:4px}
-button{background:#2458a6;color:white;border:0;padding:12px 20px;border-radius:8px;cursor:pointer}
-button:hover{background:#17427e}
-#ketqua{font-weight:bold;color:#2458a6}
-footer{text-align:center;background:#e9f0f9;padding:20px}
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Chủ đề 12B – Mạng máy tính và Internet | AI StudyPath 12</title><style>body{margin:0;background:#f4f7ff;color:#19304a;font:16px/1.65 Arial,sans-serif}header{background:linear-gradient(110deg,#2458a6,#408cbb);color:#fff;text-align:center;padding:30px 12px}main{max-width:1080px;margin:24px auto;padding:0 16px}nav{padding:14px;text-align:center;background:#fff}nav a{margin:0 12px;color:#2458a6}section,.panel{background:#fff;border:1px solid #d8e3f2;border-radius:13px;padding:19px;margin:17px 0}h2{color:#21549c}h3{color:#234b80}.theory{white-space:pre-wrap;font-family:Arial,sans-serif;line-height:1.8}.theory details{margin:12px 0;border:1px solid #dce5f2;border-radius:10px;padding:10px 14px}.theory summary{font-weight:bold;cursor:pointer;color:#2458a6}label.choice{display:block;border:1px solid #d9e4f2;border-radius:9px;padding:10px 12px;margin:8px 0;cursor:pointer}.correct{background:#e0f6e8!important;border:2px solid #16843e!important;color:#08632b;font-weight:bold}.wrong{background:#fff0f0!important;border:2px solid #e22!important;color:#ac1515}.feedback{padding:10px;background:#e0f6e8;border-radius:8px;color:#08632b;margin-top:10px;font-weight:bold}.unverified{background:#fff3d6;color:#865600}button{background:#2458a6;color:#fff;border:0;border-radius:9px;padding:13px 17px;margin:5px 6px 5px 0;cursor:pointer;font-size:15px}.bar{position:sticky;top:0;background:#fff;border:1px solid #dce5f2;border-radius:10px;padding:9px 13px;z-index:3}small{color:#526579}.tfitem{border:1px solid #dbe5f2;border-radius:9px;padding:12px;margin:12px 0}.tfitem label{display:inline-block;margin:5px 10px 5px 0;border:1px solid #dbe5f2;border-radius:7px;padding:7px 12px;cursor:pointer}.warn{background:#fff5dc;border-left:4px solid #e8a82b;padding:13px}
+.theory table{border-collapse:collapse;width:100%;margin:12px 0 22px;font-size:14px;line-height:1.5}.theory th,.theory td{border:1px solid #d2dff0;padding:9px 11px;text-align:left;vertical-align:top;white-space:normal}.theory th{background:#e5efff;color:#163c73}.theory tr:nth-child(even) td{background:#f7faff}.theory .table-scroll{overflow-x:auto}.theory h4{color:#1d518c;margin:20px 0 8px}.theory p{white-space:normal}.theory details>div{white-space:normal}.theory td:first-child{font-weight:600;min-width:120px}
 
-/* Buổi 4: Ôn tập chủ đề AI */
-.lesson-note{background:#eef5ff;border-left:4px solid #2458a6;padding:12px 16px;border-radius:8px}
-.lesson-list{padding-left:22px}
-.answer-feedback{margin-top:12px;padding:12px;background:#eef5ff;border-radius:8px;white-space:pre-line}
-fieldset{border:1px solid #e1e8f3;border-radius:10px;margin:15px 0;padding:15px}
-legend{font-weight:bold}
-fieldset label{display:block;margin:7px 0;cursor:pointer}
-</style>
-<style>.practice-result{display:none!important}.practice-card label{cursor:pointer}.practice-card input{accent-color:#2458a6}article.content [style*="color: #ff0000"],article.content [style*="color:#ff0000"],article.content [style*="color: red"],article.content [style*="color:red"]{color:inherit!important}</style><style>.practice-card label{display:block;border:1px solid #dce6f2;border-radius:9px;padding:9px 12px;margin:8px 0;cursor:pointer}.practice-card label:has(input:checked){background:#e8f2ff;border-color:#3876bc}.practice-card input[type=radio]{accent-color:#2458a6;margin-right:8px}.practice-result{display:none!important}.source-answer{color:inherit!important;font-weight:inherit!important}</style></head>
-<body><nav style="padding:12px;text-align:center;background:#eef4ff"><a href="tai-lieu-tin-hoc.html">← Quay lại danh sách chủ đề</a></nav>
-<header>
-<h1>💻 Ôn tập Tin học 12</h1>
-<p>Kết nối tri thức – Định hướng Tin học ứng dụng</p>
-<p>AI StudyPath 12</p>
-</header>
-<nav>
-<a href="index.html">← Trang chủ</a>
-<a href="#chude">Chủ đề</a>
-<a href="#ai-buoi4">Học AI</a>
-<a href="#video">Video</a>
-<a href="#luyentap">Luyện tập</a>
-<a href="#chatbot">Chatbot AI</a>
-</nav>
-<main>
-<section id="chude">
-<h2>📚 Ôn tập theo chủ đề</h2>
-<div class="grid">
-<article class="card">
-<h3>1. Trí tuệ nhân tạo (AI)</h3>
-<p>Khái niệm AI, khả năng của AI,
-ứng dụng và những vấn đề cần lưu ý
-khi sử dụng AI.</p>
-<span class="tag">Có kiến thức mẫu</span>
-</article>
-<article class="card">
-<h3>2. Mạng máy tính và Internet</h3>
-<p>Thiết bị mạng thông dụng,
-giao thức mạng và chia sẻ tài nguyên.</p>
-<span class="tag">Có kiến thức mẫu</span>
-</article>
-<article class="card">
-<h3>3. HTML và CSS</h3>
-<p>Cấu trúc trang web, thẻ HTML,
-định dạng và trình bày bằng CSS.</p>
-<span class="tag">Có kiến thức mẫu</span>
-</article>
-<article class="card">
-<h3>4. Tạo trang web</h3>
-<p>Thiết kế, xây dựng và hoàn thiện
-trang web bằng công cụ phù hợp.</p>
-<span class="tag">Đang biên soạn</span>
-</article>
-</div>
+/* Bảng lý thuyết khôi phục theo tài liệu Word gốc */
+.theory .source-table{width:100%;border-collapse:collapse;table-layout:auto;margin:8px 0 22px;font-size:15px;line-height:1.6}
+.theory .source-table th,.theory .source-table td{border:1px solid #aebfd6;padding:10px 12px;vertical-align:top;white-space:normal;overflow-wrap:break-word}
+.theory .source-table th{background:#e5efff;color:#143b70;font-weight:700;text-align:center}
+.theory .source-table tr:nth-child(even) td{background:#f7faff}
+.theory .source-table td:first-child{min-width:unset;font-weight:normal}
+.theory .theory-subtitle{font-weight:700;color:#1d518c}
+.theory h4{margin:22px 0 8px;color:#194f91}
+.theory details>summary{font-size:18px}
+@media(max-width:680px){.theory .source-table{min-width:580px;font-size:14px}.theory .table-scroll{overflow-x:auto}}
+</style></head><body>
+<header><h1>🌐 Chủ đề 12B – Mạng máy tính và Internet</h1><p>AI StudyPath 12 · Lý thuyết và luyện tập Tin học 12</p></header><nav><a href="index.html">Trang chủ</a><a href="tin-hoc.html">Ôn tập Tin học</a><a href="chu-de-01.html">Chủ đề 12A</a></nav><main>
+<section><h2>📖 I. Lý thuyết ôn tập</h2><p>Nội dung theo tài liệu bạn cung cấp. Nhấn vào từng bài để mở hoặc thu gọn lý thuyết.</p><div class="theory"><details open=""><summary>BÀI 3: MỘT SỐ THIẾT BỊ MẠNG THÔNG DỤNG</summary><div><p class="theory-subtitle">I. PHẦN LÝ THUYẾT YÊU CẦU CẦN ĐẠT</p><h4>1. Phân loại các loại mạng máy tính cơ bản</h4><div class="table-scroll"><table class="source-table"><tr><th>Loại mạng</th><th>Tên đầy đủ</th><th>Phạm vi kết nối</th><th>Đặc điểm chính</th></tr><tr><td>LAN</td><td>Local Area Network</td><td>Phạm vi nhỏ (gia đình, trường học, tòa nhà).</td><td>Tốc độ truyền tải rất cao, kết nối trực tiếp qua cáp hoặc Wi-Fi.</td></tr><tr><td>WAN</td><td>Wide Area Network</td><td>Phạm vi lớn (thành phố, quốc gia, châu lục).</td><td>Kết nối các mạng LAN ở khoảng cách xa lại với nhau.</td></tr><tr><td>Internet</td><td>Internet</td><td>Toàn cầu.</td><td>Là mạng diện rộng lớn nhất, sử dụng bộ giao thức chung TCP/IP.</td></tr></table></div><h4>2. Danh mục các thiết bị mạng thông dụng</h4><div class="table-scroll"><table class="source-table"><tr><th>Thiết bị</th><th>Chức năng chính</th><th>Quá trình hoạt động</th><th>Ưu điểm &amp; Hạn chế</th></tr><tr><td>Hub</td><td>Bộ tập trung kết nối LAN.</td><td>Gửi bản sao dữ liệu nhận được đến tất cả các cổng còn lại (Broadcast).</td><td>Ưu: Rẻ, dễ dùng.<br/>Hạn: Hiệu suất thấp, dễ xung đột, bảo mật kém.</td></tr><tr><td>Switch</td><td>Thiết bị chuyển mạch LAN.</td><td>Chỉ gửi dữ liệu đến đúng cổng của thiết bị đích dựa trên địa chỉ MAC.</td><td>Ưu: Tốc độ cao, bảo mật tốt, không xung đột dữ liệu.<br/>Hạn: Đắt hơn Hub.</td></tr><tr><td>Router</td><td>Thiết bị định tuyến mạng.</td><td>Kết nối các mạng khác nhau, chuyển gói tin dựa trên địa chỉ IP.</td><td>Ưu: Quản lý nhiều mạng, có tường lửa.<br/>Hạn: Cài đặt phức tạp.</td></tr><tr><td>Modem</td><td>Thiết bị điều chế tín hiệu.</td><td>Cầu nối chuyển đổi tín hiệu Số (Digital) và Tương tự (Analog) để ra Internet.</td><td>Ưu: Kết nối với nhà mạng (ISP).<br/>Hạn: Khả năng chia sẻ thiết bị hạn chế.</td></tr><tr><td>Access Point</td><td>Điểm truy cập Wi-Fi.</td><td>Chuyển mạng có dây thành sóng vô tuyến cho thiết bị di động.</td><td>Ưu: Cơ động, tiện lợi.<br/>Hạn: Dễ bị nhiễu, phạm vi phát sóng hạn chế.</td></tr></table></div><h4>3. So sánh nhanh: Hub vs Switch vs Wi-Fi</h4><div class="table-scroll"><table class="source-table"><tr><th>Tiêu chí</th><th>Hub</th><th>Switch</th><th>Wi-Fi (Access Point)</th></tr><tr><td>Cơ chế gửi tin</td><td>Gửi tất cả (Thụ động).</td><td>Gửi đích danh (Thông minh).</td><td>Gửi qua sóng vô tuyến.</td></tr><tr><td>Bảo mật</td><td>Thấp (ai cũng nhận được).</td><td>Cao (chỉ người nhận được).</td><td>Trung bình (cần mật khẩu).</td></tr><tr><td>Hiệu suất</td><td>Dễ bị nghẽn (Xung đột).</td><td>Rất ổn định.</td><td>Phụ thuộc vật cản và nhiễu.</td></tr></table></div><h4>4. Giải đáp các tình huống vận dụng thực tế</h4><div class="table-scroll"><table class="source-table"><tr><th>Tình huống</th><th>Câu hỏi đặt ra</th><th>Giải thích khoa học</th></tr><tr><td>Phòng thực hành</td><td>Tại sao dùng cáp mạng thay vì dùng Wi-Fi?</td><td>1. Ổn định: Không bị nhiễu sóng khi nhiều máy dùng cùng lúc.<br/>2. Tốc độ: Băng thông dây dẫn cao và đồng đều hơn.<br/>3. Quản lý: Kiểm soát máy cố định tốt hơn.</td></tr><tr><td>Xe khách di động</td><td>Tại sao xe di chuyển xa bến vẫn có Wi-Fi?</td><td>Xe lắp Bộ định tuyến di động (Mobile Router) dùng SIM 4G/5G để thu sóng từ trạm BTS rồi phát lại thành Wi-Fi trên xe.</td></tr></table></div><h4>5. Hướng dẫn kết nối thiết bị mạng</h4><div class="table-scroll"><table class="source-table"><tr><th>Kiểu kết nối</th><th>Thiết bị cần thiết</th><th>Các bước thực hiện chính</th></tr><tr><td>Kết nối có dây</td><td>Cáp mạng RJ45, Card mạng (NIC).</td><td>Cắm 1 đầu vào máy tính, 1 đầu vào cổng LAN của Switch/Router.</td></tr><tr><td>Kết nối không dây</td><td>Card Wi-Fi, Điểm truy cập.</td><td>Bật Wi-Fi trên máy, chọn tên mạng (SSID) và nhập mật khẩu (Key).</td></tr></table></div></div></details><details open=""><summary>BÀI 4: GIAO THỨC MẠNG</summary><div><h4>1. Khái niệm và Ý nghĩa của Giao thức mạng</h4><div class="table-scroll"><table class="source-table"><tr><th>Nội dung</th><th>Giải đáp chi tiết</th></tr><tr><td>Giao thức mạng là gì?</td><td>Là tập hợp các quy tắc, quy định về khuôn dạng dữ liệu và cách thức truyền dẫn mà các thiết bị phải tuân thủ để giao tiếp được với nhau.</td></tr><tr><td>Ý nghĩa</td><td>Đảm bảo các thiết bị khác nhau (về hãng sản xuất, phần cứng, hệ điều hành) có thể "hiểu" và trao đổi dữ liệu chính xác trên môi trường mạng.</td></tr><tr><td>Ví dụ &amp; Chức năng</td><td>- HTTP/HTTPS: Truyền tải dữ liệu web.<br/>- FTP: Truyền tải tệp tin.<br/>- SMTP: Gửi thư điện tử (Email).<br/>- TCP/IP: Giao thức nền tảng của Internet.</td></tr></table></div><h4>2. Giao thức trong mạng cục bộ (Ethernet)</h4><div class="table-scroll"><table class="source-table"><tr><th>Đặc điểm</th><th>Quy định chính</th></tr><tr><td>Quy định khuôn dạng</td><td>Quy định cách đóng gói dữ liệu vào các Khung (Frame).</td></tr><tr><td>Quy định địa chỉ</td><td>Sử dụng địa chỉ vật lý MAC (Media Access Control) để định danh thiết bị trong LAN.</td></tr><tr><td>Quy định truyền dẫn</td><td>Quy định cách phát hiện và xử lý khi có sự xung đột dữ liệu trên đường truyền chung.</td></tr></table></div><h4>3. Giao thức IP (Internet Protocol)</h4><div class="table-scroll"><table class="source-table"><tr><th>Thành phần / Khái niệm</th><th>Giải thích chi tiết</th></tr><tr><td>Thành phần chính</td><td>Gồm 2 phần: Địa chỉ nguồn (gửi) và Địa chỉ đích (nhận).</td></tr><tr><td>Địa chỉ IP</td><td>Là địa chỉ logic dùng để định danh duy nhất một thiết bị khi tham gia vào mạng.</td></tr><tr><td>Định tuyến (Routing)</td><td>Là quá trình tìm đường đi tối ưu để chuyển các gói tin qua các mạng khác nhau từ nguồn đến đích (do Router thực hiện).</td></tr><tr><td>Phân loại IP</td><td>- IP tĩnh: Không thay đổi (thường dùng cho máy chủ).<br/>- IP động: Thay đổi mỗi lần kết nối (thường dùng cho người dùng cá nhân).<br/>- Phân loại theo phiên bản: IPv4 (32 bit) và IPv6 (128 bit).</td></tr></table></div><h4>4. Cấu tạo và Chuyển đổi địa chỉ IPv4</h4><div class="table-scroll"><table class="source-table"><tr><th>Đặc điểm cấu tạo</th><th>Mô tả</th></tr><tr><td>Dạng Nhị phân</td><td>Gồm 32 bit (dãy số 0 và 1). Chia làm 4 nhóm (Octet), mỗi nhóm 8 bit.</td></tr><tr><td>Dạng Thập phân</td><td>Chuyển từ nhị phân sang số (0-255). Ngăn cách giữa 4 nhóm bởi dấu chấm (.).</td></tr><tr><td>Ví dụ chuyển đổi</td><td>Thập phân: 192.168.1.1<br/>Nhị phân: 11000000.10101000.00000001.00000001</td></tr><tr><td>Quy tắc chuyển đổi</td><td>Sử dụng bảng lũy thừa của 2 cho 8 vị trí bit: 128 - 64 - 32 - 16 - 8 - 4 - 2 - 1.</td></tr></table></div><h4>5. Tên miền (Domain Name) và Giao thức TCP</h4><div class="table-scroll"><table class="source-table"><tr><th>Nội dung</th><th>Giải đáp chi tiết</th></tr><tr><td>Lợi ích Tên miền</td><td>Giúp người dùng dễ nhớ, dễ sử dụng thay vì phải nhớ dãy số địa chỉ IP khô khan (Ví dụ: google.com thay vì 142.250.190.46).</td></tr><tr><td>Giao thức TCP quy định</td><td>- Cách thiết lập và kết thúc kết nối giữa hai máy.<br/>- Cách chia nhỏ dữ liệu thành các gói tin.<br/>- Cách kiểm tra lỗi và gửi lại nếu gói tin bị mất/hỏng.</td></tr><tr><td>Ý nghĩa của TCP</td><td>Đảm bảo việc truyền tải dữ liệu giữa các máy tính là tin cậy, chính xác và đúng thứ tự.</td></tr></table></div><h4>6. Phân tích Tình huống: Gọi điện thoại máy bàn</h4><div class="table-scroll"><table class="source-table"><tr><th>Hành động thực tế</th><th>Giao thức/Quy trình tương ứng trong mạng</th></tr><tr><td>Nhấc ống nghe</td><td>Tín hiệu bắt đầu yêu cầu thiết lập kết nối (Request Connection).</td></tr><tr><td>Quay số điện thoại</td><td>Cung cấp địa chỉ đích (Tương đương với việc xác định Địa chỉ IP).</td></tr><tr><td>Phát nhạc chờ / Reo chuông</td><td>Thông báo trạng thái kết nối đang được thiết lập giữa nguồn và đích.</td></tr><tr><td>Nói chuyện</td><td>Quá trình truyền tải dữ liệu (Data Transfer).</td></tr><tr><td>Báo lỗi (Bận máy/Số sai)</td><td>Phản hồi lỗi trong quá trình truyền dẫn hoặc sai địa chỉ định tuyến.</td></tr><tr><td>Kết thúc cuộc gọi</td><td>Giải phóng kết nối (Termination) để tài nguyên mạng sẵn sàng cho người khác.</td></tr></table></div></div></details><details open=""><summary>BÀI 5. THỰC HÀNH CHIA SẺ TÀI NGUYÊN TRÊN MẠNG</summary><div><h4>1. Chia sẻ tệp và thư mục trong mạng cục bộ</h4><div class="table-scroll"><table class="source-table"><tr><th>Nội dung</th><th>Giải đáp chi tiết</th></tr><tr><td>Khái niệm</td><td>Là việc cho phép các máy tính khác trong cùng một mạng cục bộ (LAN) có thể truy cập, xem hoặc chỉnh sửa tệp/thư mục được lưu trữ trên máy tính của mình.</td></tr><tr><td>Tại sao cần thiết lập?</td><td>Để tạo ra môi trường cho phép các thiết bị "nhìn thấy" nhau và có quyền truy cập vào tài nguyên của nhau một cách an toàn và có kiểm soát.</td></tr><tr><td>Môi trường cần thiết lập</td><td>Cần bật tính năng Network discovery (Khám phá mạng) và File and printer sharing (Chia sẻ tệp và máy in) trong phần Advanced sharing settings của Hệ điều hành.</td></tr><tr><td>Điều kiện thực hiện</td><td>1. Các máy tính phải kết nối chung một mạng LAN.<br/>2. Tính năng chia sẻ tài nguyên đã được bật trên hệ điều hành.<br/>3. Người dùng có quyền quản trị (Admin) hoặc quyền chia sẻ.</td></tr></table></div><h4>2. Quy trình thực hiện (Thao tác cơ bản)</h4><div class="table-scroll"><table class="source-table"><tr><th>Thao tác</th><th>Các bước thực hiện chính</th></tr><tr><td>Chia sẻ thư mục</td><td>1. Chuột phải vào thư mục -&gt; Properties.<br/>2. Chọn thẻ Sharing -&gt; Nhấn nút Share....<br/>3. Chọn đối tượng (ví dụ: Everyone) và cấp quyền (Read hoặc Read/Write) -&gt; Share.</td></tr><tr><td>Hủy bỏ chia sẻ</td><td>1. Chuột phải vào thư mục đang chia sẻ -&gt; Properties.<br/>2. Chọn thẻ Sharing -&gt; Advanced Sharing....<br/>3. Bỏ chọn ô Share this folder -&gt; OK.</td></tr></table></div><h4>3. Chia sẻ máy in trong mạng cục bộ</h4><div class="table-scroll"><table class="source-table"><tr><th>Nội dung</th><th>Giải đáp chi tiết</th></tr><tr><td>Lợi ích</td><td>1. Tiết kiệm chi phí (nhiều máy dùng chung 1 máy in).<br/>2. Tối ưu hóa không gian làm việc.<br/>3. Quản lý tập trung các lệnh in.</td></tr><tr><td>Điều kiện thực hiện</td><td>1. Máy in đã được cài đặt và kết nối vật lý với một máy tính (gọi là máy dịch vụ in).<br/>2. Máy dịch vụ in và các máy trạm phải kết nối chung mạng LAN.<br/>3. Đã bật chế độ File and printer sharing.</td></tr><tr><td>Thiết lập máy dịch vụ in</td><td>1. Vào Control Panel -&gt; Devices and Printers.<br/>2. Chuột phải vào máy in -&gt; Printer properties.<br/>3. Thẻ Sharing -&gt; Chọn Share this printer và đặt tên máy in.</td></tr><tr><td>Kết nối máy trạm</td><td>1. Trên máy trạm, vào Devices and Printers.<br/>2. Chọn Add a printer -&gt; Chọn máy in trong danh sách mạng hoặc nhập địa chỉ \\tên-máy-chủ\tên-máy-in.<br/>3. Cài đặt Driver nếu được yêu cầu.</td></tr></table></div><h4>4. Tóm tắt các lưu ý quan trọng</h4><div class="table-scroll"><table class="source-table"><tr><th>Lưu ý</th><th>Mô tả</th></tr><tr><td>Máy in mạng (Network Printer)</td><td>Là máy in có cổng LAN hoặc Wi-Fi riêng, kết nối trực tiếp vào Hub/Switch/Router mà không cần thông qua một máy tính trung gian.</td></tr><tr><td>Quyền truy cập</td><td>Cần phân biệt quyền Read (Chỉ xem/copy) và Write/Full Control (Có thể xóa/sửa) để đảm bảo an toàn dữ liệu.</td></tr><tr><td>Tường lửa (Firewall)</td><td>Đôi khi tường lửa ngăn chặn việc chia sẻ, cần cấu hình để cho phép các dịch vụ chia sẻ tệp/máy in hoạt động.</td></tr></table></div></div></details></div></section><section><h2>📝 II. Trắc nghiệm nhiều lựa chọn</h2><p>37 câu · Chọn một đáp án A, B, C hoặc D. Đáp án chỉ hiện sau khi nộp bài.</p><div class="bar"><button onclick="gradeMC()">Nộp bài</button><button onclick="resetMC()">Làm lại</button><strong id="mcscore"></strong></div></section>
+<section class="mc" data-key="A"><strong>Câu 1. LAN là thuật ngữ chỉ loại mạng nào sau đây?</strong>
+<label class="choice"><input name="mc1" type="radio" value="A"/> A. Mạng cục bộ.</label>
+<label class="choice"><input name="mc1" type="radio" value="B"/> B. Mạng diện rộng.</label>
+<label class="choice"><input name="mc1" type="radio" value="C"/> C. Mạng toàn cầu.</label>
+<label class="choice"><input name="mc1" type="radio" value="D"/> D. Mạng điện thoại di động.</label>
 </section>
-<section>
-<h2>📖 Kiến thức trọng tâm mẫu</h2>
-<div class="card">
-<h3>Trí tuệ nhân tạo</h3>
-<p>Trí tuệ nhân tạo là lĩnh vực nghiên cứu
-và phát triển các hệ thống máy tính
-có khả năng thực hiện những nhiệm vụ
-thường cần đến trí tuệ con người.</p>
-<p>Ví dụ: nhận dạng tiếng nói,
-nhận dạng hình ảnh và hỗ trợ tìm kiếm.</p>
-</div>
-<div class="card">
-<h3>HTML và CSS</h3>
-<p><strong>HTML</strong> dùng để xây dựng
-cấu trúc và nội dung trang web.</p>
-<p><strong>CSS</strong> dùng để quy định
-cách trình bày các phần tử HTML.</p>
-</div>
+<section class="mc" data-key="A"><strong>Câu 2. Phát biểu sau đây là đúng về mạng máy tính?</strong>
+<label class="choice"><input name="mc2" type="radio" value="A"/> A. Một hệ thống các thiết bị số được kết nối với nhau để truyền dữ liệu và trao đổi thông tin.</label>
+<label class="choice"><input name="mc2" type="radio" value="B"/> B. Một hệ thống các máy tính không thể kết nối với nhau.</label>
+<label class="choice"><input name="mc2" type="radio" value="C"/> C. Một thiết bị mạng có chức năng duy nhất là phát sóng Wi-Fi.</label>
+<label class="choice"><input name="mc2" type="radio" value="D"/> D. Một hệ thống chỉ sử dụng để kết nối điện thoại.</label>
 </section>
-<section id="ai-buoi4"><h2>🧠 Chủ đề 12A – Giới thiệu trí tuệ nhân tạo</h2>
-<div class="card"><p><strong>Nguồn:</strong> Tài liệu ôn tập tốt nghiệp THPT năm học 2025–2026, Bộ môn Tin học, Chủ đề 12A.</p>
-<h3>Kiến thức trọng tâm</h3><p><strong>AI:</strong> Khả năng của máy tính thực hiện những công việc mang tính trí tuệ như học tập, suy luận, giải quyết vấn đề và hiểu ngôn ngữ.</p>
-<p><strong>Đặc trưng:</strong> Học, suy luận, hiểu ngôn ngữ tự nhiên, nhận thức môi trường từ dữ liệu đầu vào.</p>
-<p><strong>Phân loại:</strong> AI hẹp phục vụ những nhiệm vụ cụ thể; AI mạnh có trí tuệ tổng quát như con người vẫn là mục tiêu nghiên cứu.</p>
-<p><strong>Ứng dụng:</strong> Dịch máy, gợi ý nội dung, robot thông minh, hỗ trợ y học và AI tạo sinh.</p>
-<p><strong>Rủi ro:</strong> Quyền riêng tư, thông tin sai lệch, giả mạo và các vấn đề đạo đức.</p></div>
-<div class="card"><h3>Phần 1 – Trắc nghiệm chọn một đáp án</h3><p id="mcq-count"></p><div id="ai-mcq-list"></div></div>
-<div class="card"><h3>Phần 2 – Tình huống Đúng – Sai</h3><p>Mỗi tình huống có bốn ý a, b, c, d.</p><div id="ai-tf-list"></div></div>
-<div class="card"><button onclick="gradeBank()" type="button">Nộp bài và xem kết quả</button> <button onclick="resetBank()" style="background:#52647b" type="button">Làm lại</button><div aria-live="polite" class="answer-feedback" id="bank-result">Chọn đáp án, sau đó nhấn Nộp bài để xem kết quả.</div></div></section>
-<section id="video">
-<h2>🎬 Video bài giảng</h2>
-<div class="card">
-<p>Video bài giảng Tin học 12 sẽ được
-bổ sung theo từng bài học.</p>
-</div>
+<section class="mc" data-key="A"><strong>Câu 3. Muốn kết nối các máy tính trong phạm vi gia đình thành một mạng, nên dùng loại thiết bị nào sau đây phù hợp nhất?</strong>
+<label class="choice"><input name="mc3" type="radio" value="A"/> A. Router.</label>
+<label class="choice"><input name="mc3" type="radio" value="B"/> B. WAP.</label>
+<label class="choice"><input name="mc3" type="radio" value="C"/> C. Hub.</label>
+<label class="choice"><input name="mc3" type="radio" value="D"/> D. Switch.</label>
 </section>
-<section id="luyentap">
-<h2>📝 Luyện tập trắc nghiệm</h2>
-<p>Ba câu hỏi mẫu để thử chức năng chấm điểm.</p>
-<div class="card">
-<div class="question">
-<p><strong>Câu 1.</strong> AI là viết tắt của thuật ngữ nào?</p>
-<label><input name="q1" type="radio" value="A"/> A. Artificial Intelligence</label>
-<label><input name="q1" type="radio" value="B"/> B. Automatic Internet</label>
-<label><input name="q1" type="radio" value="C"/> C. Advanced Information</label>
-<label><input name="q1" type="radio" value="D"/> D. Applied Interface</label>
-</div>
-<div class="question">
-<p><strong>Câu 2.</strong> HTML chủ yếu được dùng để làm gì?</p>
-<label><input name="q2" type="radio" value="A"/> A. Tạo hệ điều hành</label>
-<label><input name="q2" type="radio" value="B"/> B. Xây dựng cấu trúc trang web</label>
-<label><input name="q2" type="radio" value="C"/> C. Quản lí bộ nhớ máy tính</label>
-<label><input name="q2" type="radio" value="D"/> D. Quét virus</label>
-</div>
-<div class="question">
-<p><strong>Câu 3.</strong> CSS có vai trò nào sau đây?</p>
-<label><input name="q3" type="radio" value="A"/> A. Thay thế hoàn toàn HTML</label>
-<label><input name="q3" type="radio" value="B"/> B. Kết nối máy tính với Internet</label>
-<label><input name="q3" type="radio" value="C"/> C. Định dạng cách trình bày trang web</label>
-<label><input name="q3" type="radio" value="D"/> D. Cài đặt hệ điều hành</label>
-</div>
-<br/>
-<button onclick="chamDiem()">Nộp bài và xem điểm</button>
-<p aria-live="polite" id="ketqua"></p>
-</div>
+<section class="mc" data-key="B"><strong>Câu 4. Wi-Fi là một bộ tiêu chuẩn kĩ thuật truyền dữ liệu bằng … được sử dụng rộng rãi trong các mạng cục bộ. Điền cụm từ còn thiếu vào dấu ba chấm.</strong>
+<label class="choice"><input name="mc4" type="radio" value="A"/> A. cáp xoắn đôi.</label>
+<label class="choice"><input name="mc4" type="radio" value="B"/> B. sóng vô tuyến điện.</label>
+<label class="choice"><input name="mc4" type="radio" value="C"/> C. đường dây điện thoại.</label>
+<label class="choice"><input name="mc4" type="radio" value="D"/> D. cáp đồng trục.</label>
 </section>
-<section id="chatbot">
-<h2>🤖 Chatbot AI Tutor Tin học 12</h2>
-<div class="card">
-<p>Khu vực dành cho chatbot AI Tutor
-đã xây dựng trên Google AI Studio.</p>
-<p>Hiện chưa tích hợp chatbot vào website.</p>
-<p>Ứng dụng AI Tutor gốc vẫn được giữ riêng,
-không thay đổi dữ liệu hoặc cấu hình.</p>
-</div>
+<section class="mc" data-key="C"><strong>Câu 5. Thiết bị nào dưới đây không phải là thiết bị đầu cuối?</strong>
+<label class="choice"><input name="mc5" type="radio" value="A"/> A. Máy tính cá nhân.</label>
+<label class="choice"><input name="mc5" type="radio" value="B"/> B. Điện thoại thông minh.</label>
+<label class="choice"><input name="mc5" type="radio" value="C"/> C. Access Point.</label>
+<label class="choice"><input name="mc5" type="radio" value="D"/> D. Máy in.</label>
 </section>
-</main>
-<footer>AI StudyPath 12 – Năm học 2026–2027</footer>
-<script>
-
-function chamDiem(){
-  const dapAn = {q1:"A",q2:"B",q3:"C"};
-  let diem = 0;
-  let soCauDaLam = 0;
-
-  for(const cau in dapAn){
-    const luaChon = document.querySelector(
-      'input[name="'+cau+'"]:checked'
-    );
-
-    if(luaChon){
-      soCauDaLam++;
-      if(luaChon.value === dapAn[cau]){
-        diem++;
-      }
-    }
-  }
-
-  const ketqua = document.getElementById("ketqua");
-  ketqua.textContent =
-    "Bạn đã làm " + soCauDaLam +
-    "/3 câu. Kết quả: " + diem +
-    "/3 câu đúng. Đáp án: 1A, 2B, 3C.";
-}
-
-const bankMCQ = [{"num": 1, "question": "Phát biểu nào sau đây đúng về trí tuệ nhân tạo?", "options": {"A": "là khả năng của máy tính có thể làm những công việc mang tính trí tuệ con người.", "B": "là trí tuệ của máy tính có thể làm những công việc tương đương trí tuệ con người.", "C": "là tích hợp công nghệ hiện đại vào máy tính, giúp máy tính hiểu được con người.", "D": "là hoạt động máy tính giao tiếp được với con người bằng ngôn ngữ tự nhiên."}, "answer": "A"}, {"num": 2, "question": "Trường hợp nào sau đây KHÔNG được xem là ứng dụng của AI?", "options": {"A": "Robot hút bụi.", "B": "Ứng dụng tìm đường trên Google Map.", "C": "Cửa ra vào ở siêu thị tự động mở khi có người đến gần.", "D": "Công cụ tìm kiếm Google."}, "answer": "C"}, {"num": 3, "question": "Khả năng nào sau đây KHÔNG phải là đặc trưng của AI?", "options": {"A": "Khả năng học.", "B": "Khả năng nhận thức.", "C": "Khả năng bay.", "D": "Khả năng hiểu ngôn ngữ."}, "answer": "C"}, {"num": 4, "question": "Khả năng nắm bắt thông tin từ dữ liệu và điều chỉnh hành vi dựa trên thông tin mới là khả năng nào của AI?", "options": {"A": "Suy luận.", "B": "Hiểu ngôn ngữ.", "C": "Nhận thức.", "D": "Học."}, "answer": "D"}, {"num": 5, "question": "Hệ thống khuyến nghị tích hợp trên YouTube là ví dụ về đặc trưng nào của AI?", "options": {"A": "Khả năng học.", "B": "Khả năng giải quyết vấn đề.", "C": "Khả năng hiểu ngôn ngữ.", "D": "Khả năng nhận thức."}, "answer": "A"}, {"num": 6, "question": "“Khả năng cảm nhận và hiểu biết môi trường xung quanh thông qua các cảm biến và dữ liệu đầu vào” là của khả năng nào sau đây?", "options": {"A": "Suy luận.", "B": "Hiểu ngôn ngữ.", "C": "Nhận thức.", "D": "Học."}, "answer": "C"}, {"num": 7, "question": "Robot Asimo là ứng dụng điển hình của AI thuộc lĩnh vực nào sau đây?", "options": {"A": "Điều khiển.", "B": "Giáo dục.", "C": "Y học.", "D": "Dịch thuật."}, "answer": "A"}, {"num": 8, "question": "Theo chức năng có thể chia AI thành bao nhiêu loại?", "options": {"A": "2.", "B": "3.", "C": "4.", "D": "5."}, "answer": "A"}, {"num": 9, "question": "Thuật ngữ \"AI\" bắt đầu được sử dụng vào năm nào?", "options": {"A": "1945.", "B": "1956.", "C": "1970.", "D": "1985."}, "answer": "B"}, {"num": 10, "question": "Nhận định nào dưới đây là Sai khi nói về trí tuệ nhân tạo (AI)?", "options": {"A": "Trí tuệ nhân tạo là khả năng của máy tính thực hiện các công việc cần trí tuệ như của con người.", "B": "AI mạnh là loại AI có thể tự động học hỏi và giải quyết bất kỳ vấn đề nào mà không cần sự can thiệp của con người.", "C": "MYCIN là một ví dụ của AI mạnh vì nó có khả năng chẩn đoán bệnh mà không cần sự hỗ trợ từ con người.", "D": "Học máy là lĩnh vực nghiên cứu làm cho máy tính có khả năng học từ dữ liệu."}, "answer": "C"}, {"num": 11, "question": "Cho hộp thoại giao tiếp giữa con người và ChatGPT như hình bên. Hãy cho biết hộp thoại thể hiện đặc trưng nổi bật nào của AI?", "options": {"A": "Khả năng ngôn ngữ.", "B": "Khả năng nhận thức.", "C": "Khả năng học.", "D": "Khả năng suy luận."}, "answer": "D", "image_required": true}, {"num": 12, "question": "Phát biểu nào sau đây không là nguy hại của AI đối với con người?", "options": {"A": "Áp lực thất nghiệp.", "B": "Áp lực bị xâm phạm quyền riêng tư.", "C": "Áp lực rủi ro về an ninh, an toàn.", "D": "Áp lực thiếu nguồn nhân lực."}, "answer": "D"}, {"num": 13, "question": "Nhận định nào sau đây sai khi ngăn cấm việc giao toàn quyền quyết định cho AI điều khiển vũ khí sát thương?", "options": {"A": "Rủi ro mất kiểm soát.", "B": "Sự cố kỹ thuật không mong muốn.", "C": "Nền kinh tế toàn cầu suy giảm.", "D": "Có thể bị hack hoặc thao túng."}, "answer": "C"}, {"num": 14, "question": "Trong công nghiệp, AI giúp tự động hóa nhiều quá trình, từ chế tạo, lắp ráp, kiểm tra chất lượng đến quản lí chuỗi cung ứng. Phát biểu trên thuộc lĩnh vực nào sau đây?", "options": {"A": "Giáo dục.", "B": "Giao thông vận tải.", "C": "Sản xuất.", "D": "Tài chính, ngân hàng."}, "answer": "C"}, {"num": 15, "question": "Trong công nghiệp, AI giúp tự động hóa nhiều quá trình, từ chế tạo, lắp ráp, kiểm tra chất lượng đến quản lí chuỗi cung ứng. Phát biểu trên thuộc lĩnh vực nào?", "options": {"A": "Giáo dục.", "B": "Giao thông vận tải.", "C": "Sản xuất.", "D": "Tài chính, ngân hàng."}, "answer": "C"}, {"num": 16, "question": "Nhận định sau đây là sai khi ngăn cấm việc giao toàn quyền quyết định cho AI điều khiển vũ khí sát thương?", "options": {"A": "Rủi ro mất kiểm soát.", "B": "Sự cố kỹ thuật và hiểu biết hạn chế.", "C": "Nền kinh tế toàn cầu suy giảm.", "D": "Đe dọa cho an ninh toàn cầu."}, "answer": "C"}, {"num": 17, "question": "Trong các lợi ích sau, đâu không phải là lợi ích của AI trong lĩnh vực y học và chăm sóc sức khỏe?", "options": {"A": "Cải thiện chất lượng hình ảnh y tế.", "B": "Làm nổi bật những cấu trúc bất thường bên trong cơ thể.", "C": "Thay thế bác sĩ đưa ra các quyết định điều trị.", "D": "Hỗ trợ đưa ra các chẩn đoán chính xác, kịp thời."}, "answer": "C"}, {"num": 18, "question": "Trợ lý ảo nào sau đây là của tập đoàn Apple?", "options": {"A": "Google Assistant.", "B": "Google Adsense.", "C": "Bixby.", "D": "Siri."}, "answer": "D"}, {"num": 19, "question": "Phát biểu nào sau đây, là cảnh báo về sự phát triển của AI trong tương lai?", "options": {"A": "thay thế hoàn toàn các công việc con người.", "B": "gây ra nhiều vấn đề về đạo đức và an ninh.", "C": "giúp con người sống lâu hơn.", "D": "làm giảm tỷ lệ thất nghiệp​."}, "answer": "B"}, {"num": 20, "question": "Sản phẩm nào dưới đây không được phát triển nhờ AI?", "options": {"A": "Thiết bị nhận dạng khuôn mặt.", "B": "Máy điều hoà không khí.", "C": "Trợ lý ảo Siri của Apple.", "D": "Chatbot hỗ trợ khách hàng."}, "answer": "B"}, {"num": 21, "question": "Chức năng nào sau đây không phải của AI trong Y học?", "options": {"A": "Phân tích hình ảnh trong y tế.", "B": "Quản lý hồ sơ bệnh án.", "C": "Nhận thức cảm xúc bệnh nhân.", "D": "Phẫu thuật bằng robot."}, "answer": "C"}, {"num": 22, "question": "Khả năng nào của AI cho phép máy tính điều chỉnh hành vi dựa trên dữ liệu mới?", "options": {"A": "suy luận.", "B": "học tập.", "C": "nhận thức vấn đề.", "D": "giải quyết vấn đề."}, "answer": null}, {"num": 23, "question": "Một trong những thách thức lớn nhất của AI hiện nay là gì?", "options": {"A": "Thiếu dữ liệu để huấn luyện các mô hình.", "B": "Khả năng giải quyết các vấn đề trừu tượng.", "C": "Tạo ra các hệ thống AI cơ bản có ý thức.", "D": "Bảo mật và an toàn của các hệ thống AI."}, "answer": null}, {"num": 24, "question": "Deep Learning (Học sâu) là một nhánh của lĩnh vực nào sau đây?", "options": {"A": "Toán học.", "B": "Vật lý.", "C": "Học máy.", "D": "Ngôn ngữ học."}, "answer": "C"}, {"num": 25, "question": "Trợ lí ảo Siri là sản phẩm AI thuộc về tập đoàn nào sau đây?", "options": {"A": "Microsoft.", "B": "Google.", "C": "Apple.", "D": "Samsung."}, "answer": "C"}, {"num": 26, "question": "Lựa chọn nào sau đây KHÔNG phải đặc trưng cơ bản của AI về khả năng", "options": {"A": "tự học.", "B": "nhận thức vấn đề.", "C": "thấu hiểu.", "D": "giải quyết vấn đề."}, "answer": "C"}, {"num": 27, "question": "Cortana là trở lý ảo của công ty nào?", "options": {"A": "Samsung.", "B": "Microsoft.", "C": "Apple.", "D": "Google."}, "answer": "B"}, {"num": 28, "question": "Hệ thống tự động hóa nào KHÔNG được coi là ứng dụng AI", "options": {"A": "trả lời tin nhắn tự động được soạn sẵn.", "B": "robot thông minh hút bụi trong gia đình.", "C": "hệ thống dẫn đường của Google Maps.", "D": "giải bài toán thông qua ảnh chụp Photomath."}, "answer": "A"}, {"num": 29, "question": "Khả năng nào của AI cho phép máy tính điều chỉnh hành vi dựa trên dữ liệu mới?", "options": {"A": "Khả năng suy luận.", "B": "Khả năng học.", "C": "Khả năng nhận thức.", "D": "Khả năng giải quyết vấn đề."}, "answer": "B"}, {"num": 30, "question": "Lợi ích của AI trong giáo dục và đào tạo là gì?", "options": {"A": "Cá nhân hoá học tập.", "B": "Tăng áp lực cho học sinh.", "C": "Tăng chi phí giáo dục.", "D": "Giảm chất lượng giảng dạy."}, "answer": null}, {"num": 31, "question": "Những nguy cơ nào KHÔNG phải do AI gây ra?", "options": {"A": "Áp lực thất nghiệp.", "B": "Ảnh hưởng quyền riêng tư.", "C": "Công bằng trong công việc.", "D": "Khả năng thiếu minh bạch."}, "answer": null}, {"num": 32, "question": "Giải pháp nào cần thiết để giám sát và đảm bảo an toàn trong phát triển AI?", "options": {"A": "Tăng cường sự minh bạch.", "B": "Giảm thiểu chi phí phát triển.", "C": "Hạn chế nghiên cứu trong AI.", "D": "Sự phát triển của công nghệ."}, "answer": null}, {"num": 33, "question": "Nhận dạng vân tay và khuôn mặt trên điện thoại di động là ứng dụng của AI trong lĩnh vực nào?", "options": {"A": "Thiết kế đồ họa.", "B": "Điều khiển tự động.", "C": "Tiện ích thông minh.", "D": "Dịch vụ khách hàng."}, "answer": null}, {"num": 34, "question": "AI có thể vi phạm quyền riêng tư bằng cách nào?", "options": {"A": "Thu thập và lạm dụng dữ liệu cá nhân.", "B": "Tăng cường bảo mật dữ liệu.", "C": "Tối ưu hóa quy trình sản xuất.", "D": "Cải thiện giao tiếp giữa các thiết bị."}, "answer": null}, {"num": 35, "question": "Tình huống nào sau đây không có ứng dụng của AI trong các hoạt động thương mại điện tử?", "options": {"A": "Đề xuất các sản phẩm phù hợp dựa trên hành vi tiêu dùng của khách hàng.", "B": "Khách hàng xem được ảnh, video và thông số kĩ thuật của sản phẩm.", "C": "Khách hàng trò chuyện với chatbot tự động để tìm hiểu sản phẩm.", "D": "Tìm kiếm sản phẩm phù hợp dựa trên lịch sử tìm kiếm, sở thích của khách hàng."}, "answer": null}, {"num": 36, "question": "Trong lĩnh vực y tế, Trí tuệ nhân tạo (AI) được ứng dụng trong công việc nào sau đây?", "options": {"A": "Quản lí hồ sơ bệnh nhân và lịch sử khám bệnh bằng phần mềm.", "B": "Bệnh nhân đặt lịch khám thông qua ứng dụng của bệnh viện.", "C": "Thu viện phí thông qua các ứng dụng như ví điện tử, thẻ tín dụng, quét mã vạch thanh toán.", "D": "Sử dụng robot thông minh hỗ trợ phẫu thuật nội soi."}, "answer": null}, {"num": 37, "question": "AI được thể hiện rõ nhất trong ứng dụng thực tế nào sau đây?", "options": {"A": "Điểm danh bằng vân tay.", "B": "Máy tính tiền tại quầy thanh toán của siêu thị.", "C": "Tìm kiếm bằng giọng nói trên YouTube.", "D": "Phần mềm tính lương cho nhân viên của một công ty."}, "answer": "C"}];
-const bankTF = [{"num": 1, "scenario": "Mục tiêu của việc phát triển ứng dụng AI là nhằm xây dựng các phần mềm giúp máy tính có được những năng lực trí tuệ như con người. Ý kiến của học sinh về AI như sau:", "items": [{"key": "a", "text": "Khả năng học là khả năng vận dụng logic và tri thức để đưa ra quyết định hoặc kết luận.", "answer": "S"}, {"key": "b", "text": "Trí tuệ nhân tạo có khả năng tự học, tự thích nghi và thực hiện được nhiều công việc giống như con người.", "answer": "D"}, {"key": "c", "text": "Các dây chuyền lắp ráp hiện nay được vận hành hoàn toàn bằng các hệ thống có ứng dụng AI.", "answer": "S"}, {"key": "d", "text": "Các máy tìm kiếm thông tin trên Internet như Google, Bing có thể hiểu yêu cầu tra cứu của người dùng được đưa vào bằng văn bản hay bằng tiếng nói.", "answer": "D"}]}, {"num": 2, "scenario": "Năm 1997, máy tính Deep Blue của IMB đánh bại kiện tướng cờ vua Gary Kasparov. Đây là lần đầu tiên một chương trình đánh bại một nhà vô định thế giới về cờ vua. Một học sinh đưa ra các ý kiến sau:", "items": [{"key": "a", "text": "Máy tính Deep Blue của IMB chỉ có thể hoạt động được vào ban ngày.", "answer": "S"}, {"key": "b", "text": "Khả năng suy nghĩ của máy tính và con người giống nhau.", "answer": "S"}, {"key": "c", "text": "Việc các máy tính đánh cờ vua chứng minh khả năng của AI trong việc phân tích suy luận và giải quyết vấn đề phức tạp.", "answer": "D"}, {"key": "d", "text": "Máy tính Deep Blue là một dạng AI tổng quát có thể ứng dụng và các lĩnh vực khác.", "answer": "S"}]}, {"num": 3, "scenario": "Hiện nay có nhiều hãng ô tô, công nghệ lớn trên thế giới đang tham gia nghiên cứu, phát triển xe tự hành không người lái, trong đó có Tesla, Google, Apple, Toyota, Audi, BMW, Volvo, … Theo các phân tích của HER vào năm 2035 sẽ có hơn 20 triệu xe tự lái trên toàn thế giới. Xe tự lái sử dụng hệ thống cảm biến để phát hiện chướng ngại vật và đường đi. Hầu hết các mẫu xe tự lái đều sử dụng “năng lượng xanh”. Do đó, phương tiện này mang lại nhiều lợi ích cho con người và môi trường. Một học sinh có báo cáo như sau:", "items": [{"key": "a", "text": "Hầu hết các mẫu xe tự lái đều sử dụng “năng lượng xanh” vậy năng lượng xanh có bảo vệ môi trường.", "answer": "D"}, {"key": "b", "text": "Phát triển xe tự hành không người lái là kết hợp các công nghệ cảm biển để tránh vật cản và không cần sử dụng trí tuệ nhân tạo AI.", "answer": "S"}, {"key": "c", "text": "Năm 2035 sẽ có hơn 20 triệu xe tự lái trên toàn cầu. Xe tự lái sử dụng “năng lượng xanh” gồm những năng lượng là: Điện, Oxi, Hiro.", "answer": "D"}, {"key": "d", "text": "Xe tự hành có nhưng ưu điểm là giảm ùn tắc giao thông, giảm nhân công, giảm ô nhiễm môi trường, tăng tính an toàn nên ta nói xe tự hành có thể thay thế hoàn toàn con người trong việc lái xe.", "answer": "S"}]}, {"num": 4, "scenario": "Nhiều lĩnh vực khoa học, công nghệ và đời sống đã và đang nhận được rất nhiều lợi ích từ sự phát triển của AI. Với sự phát triển trên, một nhóm học sinh đã đưa ra các nhận định sau:", "items": [{"key": "a", "text": "AI giúp phát triển người máy thông minh.", "answer": "D"}, {"key": "b", "text": "AI giúp phát triển điều khiển tự động.", "answer": "D"}, {"key": "c", "text": "AI giúp phát triển giáo dục học giỏi hơn mà không đòi hỏi năng lực.", "answer": "S"}, {"key": "d", "text": "AI giúp phát triển giúp giảm thiểu tai nạn trong xây dựng.", "answer": "S"}]}, {"num": 5, "scenario": "Google Maps là một ứng dụng điều hướng được phát triển bởi Google, và nó tích hợp nhiều tính năng thông minh để cung cấp thông tin địa lý và điều hướng hiệu quả cho người dùng. Dưới đây là một số biểu hiện AI của ứng dụng này:", "items": [{"key": "a", "text": "Tính năng tìm kiếm bằng giọng nói: Google Maps cho phép người dùng tìm kiếm và điều hướng bằng cách sử dụng giọng nói, giúp họ tương tác với ứng dụng một cách thuận tiện khi đang lái xe hoặc di chuyển.", "answer": "D"}, {"key": "b", "text": "Google Maps không có khả năng gợi ý các địa điểm quan trọng xung quanh vị trí hiện tại hoặc địa điểm đã tìm kiếm, bao gồm nhà hàng, khách sạn, cửa hàng, và nhiều hơn nữa, dựa trên lịch sử tìm kiếm và ưa thích của người dùng.", "answer": "S"}, {"key": "c", "text": "Google Maps sử dụng dữ liệu giao thông thời gian thực để đánh giá tình trạng giao thông trên các tuyến đường. Nó có khả năng dự đoán thời gian di chuyển dựa trên tình trạng giao thông hiện tại và lịch sử di chuyển trước đó.", "answer": "D"}, {"key": "d", "text": "Tính năng \"Tối\" và \"Sáng\": Google Maps có khả năng thay đổi giao diện của ứng dụng dựa trên thời gian trong ngày.", "answer": "S"}]}, {"num": 6, "scenario": "Một công ty A có hợp tác với một công ty nước ngoài. Nhân viên công ty A có sử dụng phần mềm dịch máy để hỗ trợ soạn hợp đồng. Nhân viên rất tâm đắc về phần mềm hỗ trợ này. Do phần mềm có chứa nhiều khả năng của AI. Sau đây là một số nhận xét về khả năng của AI có trong phần mềm hỗ trợ trên.", "items": [{"key": "a", "text": "Khả năng ngôn ngữ.", "answer": "D"}, {"key": "b", "text": "Khả năng học.", "answer": "D"}, {"key": "c", "text": "Khả năng nhận thức.", "answer": "S"}, {"key": "d", "text": "Khả năng tổng hợp tri thức.", "answer": "S"}]}, {"num": 7, "scenario": "Mục tiêu của việc phát triển ứng dụng AI là nhằm xây dựng các phần mềm giúp máy tính có được những năng lực trí tuệ như con người. Ý kiến của học sinh về AI như sau:", "items": [{"key": "a", "text": "Khả năng học là khả năng vận dụng logic và tri thức để đưa ra quyết định hoặc kết luận.", "answer": "S"}, {"key": "b", "text": "Trí tuệ nhân tạo có khả năng tự học, tự thích nghi và thực hiện được nhiều công việc giống như con người.", "answer": "D"}, {"key": "c", "text": "Các dây chuyền lắp ráp hiện nay được vận hành hoàn toàn bằng các hệ thống có ứng dụng AI.", "answer": "S"}, {"key": "d", "text": "Các máy tìm kiếm thông tin trên Internet như Google, Bing có thể hiểu yêu cầu tra cứu của người dùng được đưa vào bằng văn bản hay bằng tiếng nói.", "answer": "D"}]}];
-function safeText(s){return String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');}
-function renderBank(){
- let out='';
- for(const q of bankMCQ){
-  out+='<fieldset><legend>Câu '+q.num+'. '+safeText(q.question)+'</legend>';
-  if(!q.answer || q.image_required)out+='<p><em>Câu này cần kiểm tra đáp án hoặc hình minh họa từ tài liệu gốc, chưa tính điểm tự động.</em></p>';
-  if(q.image_required)out+='<p><em>Câu này có hình minh họa trong tài liệu gốc; cần bổ sung hình trước khi chấm tự động.</em></p>';
-  for(const [key,val] of Object.entries(q.options))out+='<label><input type="radio" name="bankq'+q.num+'" value="'+key+'"> '+key+'. '+safeText(val)+'</label>';
-  out+='</fieldset>';
- }
- document.getElementById('ai-mcq-list').innerHTML=out;
- document.getElementById('mcq-count').textContent=bankMCQ.length+' câu trong tài liệu. Các câu thiếu đáp án rõ ràng hoặc cần hình sẽ không tính điểm.';
- out='';
- for(const q of bankTF){
-  out+='<fieldset><legend>Tình huống '+q.num+'. '+safeText(q.scenario)+'</legend>';
-  for(const it of q.items){
-   const name='banktf'+q.num+it.key;
-   out+='<div class="question"><p>'+it.key+') '+safeText(it.text)+'</p><label><input type="radio" name="'+name+'" value="D"> Đúng</label><label><input type="radio" name="'+name+'" value="S"> Sai</label></div>';
-  }
-  out+='</fieldset>';
- }
- document.getElementById('ai-tf-list').innerHTML=out;
-}
-function gradeBank(){
- let done=0,correct=0,total=0,details=[];
- for(const q of bankMCQ){
-  if(q.image_required || !q.answer)continue;
-  total++;const selected=document.querySelector('input[name="bankq'+q.num+'"]:checked');
-  if(selected){done++;if(selected.value===q.answer)correct++;}
-  details.push('Trắc nghiệm '+q.num+': '+(selected?(selected.value===q.answer?'Đúng':'Sai'):'Chưa làm')+' — Đáp án '+q.answer);
- }
- for(const q of bankTF)for(const it of q.items){
-  total++;const selected=document.querySelector('input[name="banktf'+q.num+it.key+'"]:checked');
-  if(selected){done++;if(selected.value===it.answer)correct++;}
-  details.push('Tình huống '+q.num+it.key+': '+(selected?(selected.value===it.answer?'Đúng':'Sai'):'Chưa làm')+' — Đáp án '+(it.answer==='D'?'Đúng':'Sai'));
- }
- document.getElementById('bank-result').textContent='Đã làm '+done+'/'+total+' ý được chấm; đúng '+correct+'/'+total+'.\n\n'+details.join('\n')+'\n\nĐáp án theo phần tô đỏ trong tài liệu gốc. Các câu cần rà soát học thuật chưa được giải thích tự động.';
-}
-function resetBank(){
- document.querySelectorAll('#ai-buoi4 input[type=radio]').forEach(x=>x.checked=false);
- document.getElementById('bank-result').textContent='Đã làm lại. Hãy chọn đáp án và nộp bài.';
-}
-document.addEventListener('DOMContentLoaded',renderBank);
-</script>
-</body>
-</html>
+<section class="mc" data-key="C"><strong>Câu 6. Phát biểu nào sau đây SAI về địa chỉ MAC trong mạng máy tính?</strong>
+<label class="choice"><input name="mc6" type="radio" value="A"/> A. Địa chỉ MAC là duy nhất cho mỗi thiết bị kết nối mạng.</label>
+<label class="choice"><input name="mc6" type="radio" value="B"/> B. Địa chỉ MAC gồm 12 ký tự trong hệ thập lục phân.</label>
+<label class="choice"><input name="mc6" type="radio" value="C"/> C. Địa chỉ MAC chính là địa chỉ IP của thiết bị và luôn có dạng bốn số thập phân.</label>
+<label class="choice"><input name="mc6" type="radio" value="D"/> D. Địa chỉ MAC được sử dụng để định danh và phân biệt các thiết bị trong mạng máy tính.</label>
+</section>
+<section class="mc" data-key="D"><strong>Câu 7. Thiết bị nào sau đây chuyển đổi tín hiệu số sang tín hiệu tương tự và ngược lại, thường dùng khi kết nối LAN với Internet?</strong>
+<label class="choice"><input name="mc7" type="radio" value="A"/> A. WAP.</label>
+<label class="choice"><input name="mc7" type="radio" value="B"/> B. Switch.</label>
+<label class="choice"><input name="mc7" type="radio" value="C"/> C. Router.</label>
+<label class="choice"><input name="mc7" type="radio" value="D"/> D. Modem.</label>
+</section>
+<section class="mc" data-key="C"><strong>Câu 8. Những nhận định dưới đây là Sai khi nói về mạng LAN?</strong>
+<label class="choice"><input name="mc8" type="radio" value="A"/> A. Mạng LAN có thể được sử dụng trong các phạm vi nhỏ như tòa nhà hoặc văn phòng.</label>
+<label class="choice"><input name="mc8" type="radio" value="B"/> B. Switch là thiết bị cho phép kết nối các thiết bị đầu cuối trong mạng LAN.</label>
+<label class="choice"><input name="mc8" type="radio" value="C"/> C. Mạng LAN luôn yêu cầu kết nối có dây để truyền dữ liệu.</label>
+<label class="choice"><input name="mc8" type="radio" value="D"/> D. Trong mạng LAN, các gói tin được chuyển tiếp giữa các thiết bị thông qua địa chỉ MAC.</label>
+</section>
+<section class="mc" data-key="A"><strong>Câu 9. Switch là thiết bị kết nối cơ bản của loại mạng nào sau đây?</strong>
+<label class="choice"><input name="mc9" type="radio" value="A"/> A. Mạng LAN có dây.</label>
+<label class="choice"><input name="mc9" type="radio" value="B"/> B. Mạng LAN không dây.</label>
+<label class="choice"><input name="mc9" type="radio" value="C"/> C. Mạng Wi-Fi.</label>
+<label class="choice"><input name="mc9" type="radio" value="D"/> D. Mạng Internet.</label>
+</section>
+<section class="mc" data-key="B"><strong>Câu 10. Thiết bị nào sau đây là Router (bộ định tuyến)?</strong>
+<label class="choice"><input name="mc10" type="radio" value="A"/> A. Thiết bị tập trung, phát dữ liệu nhận được ra các cổng còn lại (Hub).</label>
+<label class="choice"><input name="mc10" type="radio" value="B"/> B. Thiết bị kết nối các mạng khác nhau và chuyển tiếp gói tin dựa trên địa chỉ IP (Router).</label>
+<label class="choice"><input name="mc10" type="radio" value="C"/> C. Thiết bị chuyển mạch dữ liệu trong LAN theo địa chỉ MAC (Switch).</label>
+<label class="choice"><input name="mc10" type="radio" value="D"/> D. Thiết bị cung cấp kết nối Wi-Fi cho các máy trạm (Access Point).</label>
+</section>
+<section class="mc" data-key="B"><strong>Câu 11. Nếu một trạm Wi-Fi có biểu tượng khóa, điều này có nghĩa là gì?</strong>
+<label class="choice"><input name="mc11" type="radio" value="A"/> A. Trạm không có kết nối Internet.</label>
+<label class="choice"><input name="mc11" type="radio" value="B"/> B. Trạm yêu cầu mật khẩu để kết nối.</label>
+<label class="choice"><input name="mc11" type="radio" value="C"/> C. Trạm chỉ cho phép các thiết bị có địa chỉ MAC cụ thể kết nối.</label>
+<label class="choice"><input name="mc11" type="radio" value="D"/> D. Trạm không hoạt động đang yêu cầu nhập địa chỉ để kết nối.</label>
+</section>
+<section class="mc" data-key="B"><strong>Câu 12. Wi-Fi là một bộ tiêu chuẩn kĩ thuật truyền dữ liệu bằng … được sử dụng rộng rãi trong các mạng cục bộ. Điền cụm từ còn thiếu vào dấu ba chấm.</strong>
+<label class="choice"><input name="mc12" type="radio" value="A"/> A. cáp xoắn đôi.</label>
+<label class="choice"><input name="mc12" type="radio" value="B"/> B. sóng vô tuyến điện.</label>
+<label class="choice"><input name="mc12" type="radio" value="C"/> C. đường dây điện thoại.</label>
+<label class="choice"><input name="mc12" type="radio" value="D"/> D. cáp đồng trục.</label>
+</section>
+<section class="mc" data-key="C"><strong>Câu 13. Bộ thu phát Wi-Fi còn được gọi là gì?</strong>
+<label class="choice"><input name="mc13" type="radio" value="A"/> A. Router.</label>
+<label class="choice"><input name="mc13" type="radio" value="B"/> B. Switch.</label>
+<label class="choice"><input name="mc13" type="radio" value="C"/> C. Access Point.</label>
+<label class="choice"><input name="mc13" type="radio" value="D"/> D. Modem.</label>
+</section>
+<section class="mc" data-key="B"><strong>Câu 14. Vai trò chính của Router là gì?</strong>
+<label class="choice"><input name="mc14" type="radio" value="A"/> A. Phát sóng Wi-Fi cho các thiết bị.</label>
+<label class="choice"><input name="mc14" type="radio" value="B"/> B. Kết nối các mạng LAN với nhau và chuyển tiếp dữ liệu giữa chúng.</label>
+<label class="choice"><input name="mc14" type="radio" value="C"/> C. Kết nối các thiết bị đầu cuối với mạng.</label>
+<label class="choice"><input name="mc14" type="radio" value="D"/> D. Lưu trữ dữ liệu.</label>
+</section>
+<section class="mc" data-key="A"><strong>Câu 15. Phát biểu nào sau đây đúng khi thể hiện chức năng của Modem?</strong>
+<label class="choice"><input name="mc15" type="radio" value="A"/> A. là thiết bị có chức năng chuyển đổi tín hiệu tương tự (analog) như tín hiệu sóng điện từ, tín hiệu quang sang tín hiệu số và ngược lại.</label>
+<label class="choice"><input name="mc15" type="radio" value="B"/> B. là một bộ tiêu chuẩn kĩ thuật truyền dữ liệu bằng sống vô tuyến điện, được sử dụng rộng rãi trong các mạng cục bộ.</label>
+<label class="choice"><input name="mc15" type="radio" value="C"/> C. là một thiết bị trung tâm dùng để kết nối tất cả các thiết bị khác trong cùng một mạng LAN (mạng có dây). Dữ liệu gửi từ thiết bị nguồn sẽ đến thiết bị đích nhờ địa chỉ MAC.</label>
+<label class="choice"><input name="mc15" type="radio" value="D"/> D. là thiết bị dùng để định tuyến hay dẫn đường cho dữ liệu khi kết nối các mạng cục bộ thông qua mạng internet.</label>
+</section>
+<section class="mc" data-key="C"><strong>Câu 16. Giả sử cách kết nối máy tính với Switch để truy cập Internet gồm 4 bước như sau:
+	1. Cắm một đầu dây cáp vào cổng LAN trên máy tính.
+	2. Chuẩn bị một dây cáp mạng có hai đầu RJ45.
+	3.  Truy cập được vào trang web bất kì. 
+	4. Cắm đầu dây cáp còn lại vào cổng LAN trên Switch và quan sát sự thay đổi đèn báo hiệu trên cổng. Khi tín hiệu đèn trên hai cổng kết nối của hai thiết bị được sáng lên và nhấp nháy màu xanh báo hiệu rằng kết nối vật lí giữa hai thiết bị thành công.
+Hãy chọn quy trình kết nối đúng để máy tính có thể truy cập internet từ các bước trên:</strong>
+<label class="choice"><input name="mc16" type="radio" value="A"/> A. 1 – 3 – 2 – 4.</label>
+<label class="choice"><input name="mc16" type="radio" value="B"/> B. 4 – 2 – 1 – 3.</label>
+<label class="choice"><input name="mc16" type="radio" value="C"/> C. 2 – 1 – 4 – 3.</label>
+<label class="choice"><input name="mc16" type="radio" value="D"/> D. 3 – 1 – 2 – 3.</label>
+</section>
+<section class="mc" data-key="A"><strong>Câu 17. Cho địa chỉ IP dưới dạng nhị phân như sau: 11000000  10101000  00001100 11010011. Phương án nào dưới đây xác định địa chỉ ở dạng thập phân tương ứng?</strong>
+<label class="choice"><input name="mc17" type="radio" value="A"/> A. 192.168.12.211.</label>
+<label class="choice"><input name="mc17" type="radio" value="B"/> B. 192.168.11.210.</label>
+<label class="choice"><input name="mc17" type="radio" value="C"/> C. 198.168.11.211.</label>
+<label class="choice"><input name="mc17" type="radio" value="D"/> D. 255.168.12.210.</label>
+</section>
+<section class="mc" data-key="C"><strong>Câu 18. Giao thức IP làm nhiệm vụ gì trong mạng?</strong>
+<label class="choice"><input name="mc18" type="radio" value="A"/> A. Xác định địa chỉ MAC cho các thiết bị.</label>
+<label class="choice"><input name="mc18" type="radio" value="B"/> B. Chia dữ liệu thành các gói nhỏ.</label>
+<label class="choice"><input name="mc18" type="radio" value="C"/> C. Thiết lập địa chỉ và dẫn đường các gói dữ liệu.</label>
+<label class="choice"><input name="mc18" type="radio" value="D"/> D. Kiểm tra lỗi trong truyền dữ liệu.</label>
+</section>
+<section class="mc" data-key="C"><strong>Câu 19. Giao thức nào sau đây thường được sử dụng cùng với IP để quản lý kết nối và truyền dữ liệu trong Internet?</strong>
+<label class="choice"><input name="mc19" type="radio" value="A"/> A. FTP.</label>
+<label class="choice"><input name="mc19" type="radio" value="B"/> B. SMTP.</label>
+<label class="choice"><input name="mc19" type="radio" value="C"/> C. TCP.</label>
+<label class="choice"><input name="mc19" type="radio" value="D"/> D. DHCP.</label>
+</section>
+<section class="mc" data-key="A"><strong>Câu 20. Phát biểu nào sau đây đúng về chức năng của giao thức mạng?</strong>
+<label class="choice"><input name="mc20" type="radio" value="A"/> A. Tập hợp các quy định về cách thức giao tiếp để chuyền dữ liệu giữa các đối tượng tham gia mạng.</label>
+<label class="choice"><input name="mc20" type="radio" value="B"/> B. Cho phép một người từ một máy tính có thể “nhìn thấy” và sử dụng tài nguyên trên một máy tính khác trong mạng.</label>
+<label class="choice"><input name="mc20" type="radio" value="C"/> C. Xác định đường truyền tối ưu cho phép dữ liệu truyền đi và nhận về đầy đủ mà không bị mất hoặc bị trùng lặp.</label>
+<label class="choice"><input name="mc20" type="radio" value="D"/> D. Đảm bảo việc truyền dữ liệu theo từng ứng dụng một cách chính xác, tin cậy và hiệu quả.</label>
+</section>
+<section class="mc" data-key="D"><strong>Câu 21. Phát biểu nào đúng về chức năng của giao thức TCP?</strong>
+<label class="choice"><input name="mc21" type="radio" value="A"/> A. là tập hợp các quy định về cách thức giao tiếp để chuyền dữ liệu giữa các đối tượng tham gia mạng.</label>
+<label class="choice"><input name="mc21" type="radio" value="B"/> B. là cho phép một người từ một máy tính có thể “nhìn thấy” và sử dụng tài nguyên trên một máy tính khác trong mạng.</label>
+<label class="choice"><input name="mc21" type="radio" value="C"/> C. là xác định đường truyền tối ưu cho phép dữ liệu truyền đi và nhận về đầy đủ mà không bị mất hoặc bị trùng lặp.</label>
+<label class="choice"><input name="mc21" type="radio" value="D"/> D. là đảm bảo việc truyền dữ liệu theo từng ứng dụng một cách chính xác, tin cậy và hiệu quả.</label>
+</section>
+<section class="mc" data-key="B"><strong>Câu 22. Hiện nay có mấy loại địa chỉ IP khi thiết bị tham gia mạng Internet?</strong>
+<label class="choice"><input name="mc22" type="radio" value="A"/> A. 1</label>
+<label class="choice"><input name="mc22" type="radio" value="B"/> B. 2</label>
+<label class="choice"><input name="mc22" type="radio" value="C"/> C. 3</label>
+<label class="choice"><input name="mc22" type="radio" value="D"/> D. 4</label>
+</section>
+<section class="mc" data-key="D"><strong>Câu 23. Địa chỉ IPv6 có bao nhiêu bit?</strong>
+<label class="choice"><input name="mc23" type="radio" value="A"/> A. 32 bit.</label>
+<label class="choice"><input name="mc23" type="radio" value="B"/> B. 48 bit.</label>
+<label class="choice"><input name="mc23" type="radio" value="C"/> C. 64 bit.</label>
+<label class="choice"><input name="mc23" type="radio" value="D"/> D. 128 bit.</label>
+</section>
+<section class="mc" data-key="A"><strong>Câu 24. Việc truyền tải dữ liệu của các trang web hiện nay sử dụng giao thức gì?</strong>
+<label class="choice"><input name="mc24" type="radio" value="A"/> A. HTTP.</label>
+<label class="choice"><input name="mc24" type="radio" value="B"/> B. FTP.</label>
+<label class="choice"><input name="mc24" type="radio" value="C"/> C. SMTP.</label>
+<label class="choice"><input name="mc24" type="radio" value="D"/> D. POP3.</label>
+</section>
+<section class="mc" data-key="A"><strong>Câu 25. Giao thức POP3 quy định điều gì?</strong>
+<label class="choice"><input name="mc25" type="radio" value="A"/> A. Về cách người nhận thư.</label>
+<label class="choice"><input name="mc25" type="radio" value="B"/> B. Liên quan đến gửi thư.</label>
+<label class="choice"><input name="mc25" type="radio" value="C"/> C. Truyền tải dữ liệu trên web.</label>
+<label class="choice"><input name="mc25" type="radio" value="D"/> D. Định tuyến trong mạng.</label>
+</section>
+<section class="mc" data-key="C"><strong>Câu 26. Phát biểu nào sau đây sai về chức năng của giao thức TCP/IP?</strong>
+<label class="choice"><input name="mc26" type="radio" value="A"/> A. Giao thức IP quy định cách thiết lập địa chỉ cho các thiết bị tham gia mạng và cách dẫn đường các gói dữ liệu theo địa chỉ từ thiết bị gửi đến thiết bị nhận.</label>
+<label class="choice"><input name="mc26" type="radio" value="B"/> B. Giao thức IP gồm thành phần chính là địa chỉ IP và định tuyến để dẫn dữ liệu từ LAN của máy gửi đến LAN của máy nhận.</label>
+<label class="choice"><input name="mc26" type="radio" value="C"/> C. Giao thức TCP không phân biệt giữa các ứng dụng khác nhau khi truyền dữ liệu mà chỉ dẫn đường cho các gói dữ liệu theo địa chỉ.</label>
+<label class="choice"><input name="mc26" type="radio" value="D"/> D. Giao thức TCP đảm bảo việc truyền dữ liệu theo từng ứng dụng một cách chính xác, tin cậy và hiệu quả.</label>
+</section>
+<section class="mc" data-key="D"><strong>Câu 27. Có bao nhiêu phương pháp “định tuyến”?</strong>
+<label class="choice"><input name="mc27" type="radio" value="A"/> A. 4</label>
+<label class="choice"><input name="mc27" type="radio" value="B"/> B. 3</label>
+<label class="choice"><input name="mc27" type="radio" value="C"/> C. 1</label>
+<label class="choice"><input name="mc27" type="radio" value="D"/> D. 2</label>
+</section>
+<section class="mc" data-key="A"><strong>Câu 28. Lợi ích của việc sử dụng tên miền thay cho địa chỉ IP trên Internet?</strong>
+<label class="choice"><input name="mc28" type="radio" value="A"/> A. Giúp người dùng dễ nhớ.</label>
+<label class="choice"><input name="mc28" type="radio" value="B"/> B. Cho phép truyền tải dữ liệu lớn.</label>
+<label class="choice"><input name="mc28" type="radio" value="C"/> C. Cho phép truyền dữ liệu đúng địa chỉ.</label>
+<label class="choice"><input name="mc28" type="radio" value="D"/> D. Giúp tăng tốc truyền dữ liệu.</label>
+</section>
+<section class="mc" data-key="A"><strong>Câu 29. Thư mục công cộng trên hệ thống được thiết lập ở đâu trong các phương án sau đây?</strong>
+<label class="choice"><input name="mc29" type="radio" value="A"/> A. C:\Users\Public.</label>
+<label class="choice"><input name="mc29" type="radio" value="B"/> B. C:\Windows\Public.</label>
+<label class="choice"><input name="mc29" type="radio" value="C"/> C. C:\Program Files\Public.</label>
+<label class="choice"><input name="mc29" type="radio" value="D"/> D. C:\Documents\Public.</label>
+</section>
+<section class="mc" data-key="B"><strong>Câu 30. Phát biểu nào sau đây là đúng về việc chia sẻ tài nguyên trong mạng cục bộ?</strong>
+<label class="choice"><input name="mc30" type="radio" value="A"/> A. là tập hợp các quy định về cách thức giao tiếp để chuyền dữ liệu giữa các đối tượng tham gia mạng.</label>
+<label class="choice"><input name="mc30" type="radio" value="B"/> B. là cho phép một người từ một máy tính có thể “nhìn thấy” và sử dụng tài nguyên trên một máy tính khác trong mạng.</label>
+<label class="choice"><input name="mc30" type="radio" value="C"/> C. là xác định đường truyền tối ưu cho phép dữ liệu truyền đi và nhận về đầy đủ mà không bị mất hoặc bị trùng lặp.</label>
+<label class="choice"><input name="mc30" type="radio" value="D"/> D. Là đảm bảo việc truyền dữ liệu theo từng ứng dụng một cách chính xác, tin cậy và hiệu quả.</label>
+</section>
+<section class="mc" data-key="B"><strong>Câu 31. Để thêm người dùng vào danh sách chia sẻ, và muốn người dùng có quyền đọc và sửa bạn cần làm gì trong các phương án dưới đây?</strong>
+<label class="choice"><input name="mc31" type="radio" value="A"/> A. Chọn thư mục, sau đó chọn Add User.</label>
+<label class="choice"><input name="mc31" type="radio" value="B"/> B. Trong thẻ Sharing, chọn Add sau khi chọn Everyone, rồi chọn Read/Write trong mục Permission Level.</label>
+<label class="choice"><input name="mc31" type="radio" value="C"/> C. Nhấp chuột phải lên thư mục, chọn Add to Share List, rồi chọn Read/Write trong mục Permission Level.</label>
+<label class="choice"><input name="mc31" type="radio" value="D"/> D. Mở thư mục, nhấp chuột phải chọn Add User.</label>
+</section>
+<section class="mc" data-key="B"><strong>Câu 32. Thao tác nào sau đây không tạo thuận lợi cho việc chia sẻ dữ liệu trong mạng?</strong>
+<label class="choice"><input name="mc32" type="radio" value="A"/> A. Thiết lập chế độ mạng riêng.</label>
+<label class="choice"><input name="mc32" type="radio" value="B"/> B. Bật tường lửa trong hệ điều hành.</label>
+<label class="choice"><input name="mc32" type="radio" value="C"/> C. Thiết lập cho phép các máy tính nhìn thấy và chia sẻ dữ liệu với nhau.</label>
+<label class="choice"><input name="mc32" type="radio" value="D"/> D. Tắt tạm thời tường lửa trong hệ điều hành.</label>
+</section>
+<section class="mc" data-key="A"><strong>Câu 33. Cách thực hiện nào sau đây là đúng khi chia sẻ thư mục trong mạng cục bộ?</strong>
+<label class="choice"><input name="mc33" type="radio" value="A"/> A. Chọn thư mục, nhấp chuột phải, chọn Properties, sau đó chọn Sharing.</label>
+<label class="choice"><input name="mc33" type="radio" value="B"/> B. Chọn thư mục, nhấp chuột phải, chọn Share.</label>
+<label class="choice"><input name="mc33" type="radio" value="C"/> C. Mở thư mục, sau đó chọn Share.</label>
+<label class="choice"><input name="mc33" type="radio" value="D"/> D. Chọn thư mục, sau đó chọn Add to Network.</label>
+</section>
+<section class="mc" data-key="B"><strong>Câu 34. Một phòng máy tính của nhà trường được kết nối mạng LAN giữa một máy giáo viên và các máy học sinh. Phòng máy được cấp thêm một máy in có cổng giao tiếp với máy tính qua cổng USB. Sau đây là các công việc cần làm để các máy học sinh có thể dùng chung máy in thông qua máy giáo viên.
+	1. Kết nối và cài đặt máy in trên máy giáo viên.
+	2. Tìm và cài đặt máy in trên mạng LAN cho các máy học sinh.
+	3. Chia sẻ quyền truy cập máy in qua mạng từ máy giáo viên.</strong>
+<label class="choice"><input name="mc34" type="radio" value="A"/> A. 123.</label>
+<label class="choice"><input name="mc34" type="radio" value="B"/> B. 132.</label>
+<label class="choice"><input name="mc34" type="radio" value="C"/> C. 312.</label>
+<label class="choice"><input name="mc34" type="radio" value="D"/> D. 321.</label>
+</section>
+<section class="mc" data-key="A"><strong>Câu 35. Nhà cung cấp dịch vụ truy cập Internet được gọi là gì?</strong>
+<label class="choice"><input name="mc35" type="radio" value="A"/> A. ISP</label>
+<label class="choice"><input name="mc35" type="radio" value="B"/> B. AP</label>
+<label class="choice"><input name="mc35" type="radio" value="C"/> C. WAN</label>
+<label class="choice"><input name="mc35" type="radio" value="D"/> D. LAN</label>
+</section>
+<section class="mc" data-key="C"><strong>Câu 36. Loại cáp nào thường được sử dụng để kết nối các máy tính trong mạng LAN?</strong>
+<label class="choice"><input name="mc36" type="radio" value="A"/> A. Cáp USB.</label>
+<label class="choice"><input name="mc36" type="radio" value="B"/> B. Cáp HDMI.</label>
+<label class="choice"><input name="mc36" type="radio" value="C"/> C. Cáp Ethernet.</label>
+<label class="choice"><input name="mc36" type="radio" value="D"/> D. Cáp đồng trục.</label>
+</section>
+<section class="mc" data-key="A"><strong>Câu 37. Công nghệ nào sau đây cho phép các thiết bị giao tiếp với nhau trong một khoảng cách ngắn hoặc phạm vi hẹp mà không cần dây cáp?</strong>
+<label class="choice"><input name="mc37" type="radio" value="A"/> A. Bluetooth.</label>
+<label class="choice"><input name="mc37" type="radio" value="B"/> B. Ethernet.</label>
+<label class="choice"><input name="mc37" type="radio" value="C"/> C. TCP/IP.</label>
+<label class="choice"><input name="mc37" type="radio" value="D"/> D. Firewall.</label>
+</section>
+<section><h2>☑️ III. Câu hỏi Đúng – Sai</h2><p>12 tình huống, mỗi tình huống gồm 4 ý. Chọn Đúng hoặc Sai cho từng ý.</p><div class="bar"><button onclick="gradeTF()">Nộp bài Đúng – Sai</button><button onclick="resetTF()">Làm lại Đúng – Sai</button><strong id="tfscore"></strong></div></section>
+<section><h3>Câu 1</h3><p>Một công ty muốn triển khai hệ thống mạng cục bộ. Công ty có 2 tầng cần một hệ thống mạng hoàn chỉnh để kết nối tất cả các máy tính trong văn phòng và chia sẻ tài nguyên trong mạng cục bộ.
+Sau đây là một số nhận xét về hệ thống mạng trên sau khi được lắp đặt:</p>
+<div class="tfitem" data-key="D"><div><b>a)</b> Có thể sử dụng cáp UTP và switch để kết nối các máy tính thành một mạng LAN.</div><label><input name="tf1a" type="radio" value="D"/> Đúng</label><label><input name="tf1a" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="D"><div><b>b)</b> Dữ liệu có thể truyền đến các máy tính trong văn phòng thông qua mạng LAN.</div><label><input name="tf1b" type="radio" value="D"/> Đúng</label><label><input name="tf1b" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="S"><div><b>c)</b> Sử dụng mạng Wi-fi để truyền dữ liệu sẽ nhanh hơn sử dụng cáp UTP.</div><label><input name="tf1c" type="radio" value="D"/> Đúng</label><label><input name="tf1c" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="S"><div><b>d)</b> Vật cản như tường, sàn nhà không làm ảnh hưởng đến tốc độ truyền dữ liệu của Wi-fi.</div><label><input name="tf1d" type="radio" value="D"/> Đúng</label><label><input name="tf1d" type="radio" value="S"/> Sai</label></div>
+</section>
+<section><h3>Câu 2</h3><p>Tại trường học, Phòng máy 1 và Phòng máy 2 dùng hai switch riêng, cùng kết nối tới bộ định tuyến và modem chung để truy cập Internet. Phòng máy 1 và thiết bị Wi-Fi hoạt động ổn định, nhưng Phòng máy 2 chậm và đôi khi mất kết nối. Kiểm tra ban đầu xác nhận modem chung vẫn hoạt động bình thường; nguyên nhân cụ thể tại Phòng máy 2 chưa được xác định. Hãy đánh giá các nhận định sau:</p>
+<div class="tfitem" data-key="S"><div><b>a)</b> Phòng máy 2 sử dụng cùng một switch với Phòng máy 1 để kết nối internet.</div><label><input name="tf2a" type="radio" value="D"/> Đúng</label><label><input name="tf2a" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="S"><div><b>b)</b> Người quản trị IT đã phát hiện ra sự cố về modem gây ra tốc độ Internet chậm trong Phòng máy 2.</div><label><input name="tf2b" type="radio" value="D"/> Đúng</label><label><input name="tf2b" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="S"><div>c) Vì modem chung vẫn hoạt động bình thường nên bắt buộc phải thay modem mới để khắc phục lỗi chỉ xảy ra ở Phòng máy 2.</div><label><input name="tf2c" type="radio" value="D"/> Đúng</label><label><input name="tf2c" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="D"><div><b>d)</b> Việc nâng cấp switch trong Phòng máy 2 có thể không cải thiện được tốc độ internet nếu vấn đề thực sự nằm ở cấu hình mạng hoặc thiết bị phần cứng khác.</div><label><input name="tf2d" type="radio" value="D"/> Đúng</label><label><input name="tf2d" type="radio" value="S"/> Sai</label></div>
+</section>
+<section><h3>Câu 3</h3><p>Gia đình bạn Kiên cần lắp đặt hệ thống mạng Internet để các thành viên trong nhà (diện tích 70 m²) có nhu cầu sử dụng bao gồm 03 máy tính để bàn và một số điện thoại thông minh. Ngoài ra, 03 máy tính này cần được kết nối với nhau để có thể truyền dữ liệu ngay cả khi không có Internet.
+Sau đây là một số nhận xét của bạn Kiên sau khi hệ thống đã được lắp đặt.</p>
+<div class="tfitem" data-key="D"><div><b>a)</b> Có thể sử dụng cáp xoắn đôi để kết nối các máy tính thành một mạng LAN.</div><label><input name="tf3a" type="radio" value="D"/> Đúng</label><label><input name="tf3a" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="D"><div><b>b)</b> Có thể sử dụng một Access Point để cho phép truy cập Internet không dây.</div><label><input name="tf3b" type="radio" value="D"/> Đúng</label><label><input name="tf3b" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="S"><div><b>c)</b> Sử dụng mạng không dây sẽ có tốc độ nhanh hơn sử dụng cáp xoắn đôi khi thực hiện chia sẻ các tệp trong trường hợp không có Internet.</div><label><input name="tf3c" type="radio" value="D"/> Đúng</label><label><input name="tf3c" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="S"><div><b>d)</b> Có thể sử dụng một Switch để kết nối giữa các máy tính với nhau và giữa các máy tính với Internet.</div><label><input name="tf3d" type="radio" value="D"/> Đúng</label><label><input name="tf3d" type="radio" value="S"/> Sai</label></div>
+</section>
+<section><h3>Câu 4</h3><p>Một nhóm học sinh đang thảo luận về vai trò quan trọng của giao thức mạng là đảm bảo việc truyền dữ liệu qua mạng một cách hiệu quả và an toàn. Giao thức mạng giúp các thiết bị giao tiếp với nhau và quản lý các quá trình truyền tải thông tin. Một học sinh đã đưa ra các nhận định như sau:</p>
+<div class="tfitem" data-key="D"><div><b>a)</b> Giao thức TCP/IP là giao thức cơ bản của Internet, được sử dụng để truyền tải dữ liệu qua mạng.</div><label><input name="tf4a" type="radio" value="D"/> Đúng</label><label><input name="tf4a" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="S"><div>b) Giao thức HTTP là giao thức chuyên dùng để gửi thư điện tử (email) từ máy khách đến máy chủ thư.</div><label><input name="tf4b" type="radio" value="D"/> Đúng</label><label><input name="tf4b" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="D"><div><b>c)</b> Giao thức TCP đảm bảo rằng dữ liệu được gửi đi sẽ đến đích một cách đầy đủ và theo thứ tự.</div><label><input name="tf4c" type="radio" value="D"/> Đúng</label><label><input name="tf4c" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="S"><div><b>d)</b> Khi kết nối một thiết bị di động với mạng Wi-Fi bằng giao thức TCP/IP giúp thiết bị nhận địa chỉ tự động từ bộ định tuyến.</div><label><input name="tf4d" type="radio" value="D"/> Đúng</label><label><input name="tf4d" type="radio" value="S"/> Sai</label></div>
+</section>
+<section><h3>Câu 5</h3><p>Giao thức mạng (Network Protocol) là các quy tắc điều khiển việc  kết nối và truyền thông giữa các thiết bị mạng. Có nhiều loại giao thức mạng với những chức năng khác nhau, chẳng hạn như giao thức trao đổi dữ liệu trên mạng (Ví dụ, giao thức TCP), giao thức định  tuyến và chuyển tiếp (ví dụ: giao thức IP). Hai thiết bị mạng muốn kết nối với nhau thì phải tuân theo những quy tắc điều khiển được ấn định bởi cùng một giao thức mạng.
+Từ nhận xét trên, em hãy cho biết mỗi phát biểu sau đây là đúng hay sai?</p>
+<div class="tfitem" data-key="D"><div><b>a)</b> Hai máy tính muốn trao đổi dữ liệu với nhau thì phải dùng chung một giao thức mạng.</div><label><input name="tf5a" type="radio" value="D"/> Đúng</label><label><input name="tf5a" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="S"><div><b>b)</b> TCP/IP là tên của một giao thức duy nhất.</div><label><input name="tf5b" type="radio" value="D"/> Đúng</label><label><input name="tf5b" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="S"><div><b>c)</b> Giao thức TCP phụ trách việc tìm ra tuyến đường đi tốt nhất trên mạng cho các gói tin.</div><label><input name="tf5c" type="radio" value="D"/> Đúng</label><label><input name="tf5c" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="D"><div><b>d)</b> Giao thức IP định nghĩ việc trao đổi dữ liệu giữa hai thiết bị mạng, chẳng hạn như giữa hai máy tính trên mạng Internet.</div><label><input name="tf5d" type="radio" value="D"/> Đúng</label><label><input name="tf5d" type="radio" value="S"/> Sai</label></div>
+</section>
+<section><h3>Câu 6</h3><p>Trong một tiết báo cáo tìm hiểu về giao thức mạng. Một nhóm học sinh đã đưa ra những nhận định sau:</p>
+<div class="tfitem" data-key="D"><div><b>a)</b> Giao thức IP quy định cách thiết lập địa chỉ cho các thiết bị tham gia mạng và cách dẫn đường các gói dữ liệu theo địa chỉ từ thiết bị gửi đến thiết bị nhận.</div><label><input name="tf6a" type="radio" value="D"/> Đúng</label><label><input name="tf6a" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="S"><div><b>b)</b> Địa chỉ IP và địa chỉ mac là giống nhau.</div><label><input name="tf6b" type="radio" value="D"/> Đúng</label><label><input name="tf6b" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="S"><div><b>c)</b> Giao thức TCP không phân biệt giữa các ứng dụng khác nhau khi truyền dữ liệu.</div><label><input name="tf6c" type="radio" value="D"/> Đúng</label><label><input name="tf6c" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="D"><div><b>d)</b> Địa chỉ IP dưới dạng nhị phân 11000000 10101000 00001101 11010010 có địa chỉ IP dưới dạng thập phân tương ứng là 192.168.13.210.</div><label><input name="tf6d" type="radio" value="D"/> Đúng</label><label><input name="tf6d" type="radio" value="S"/> Sai</label></div>
+</section>
+<section><h3>Câu 7</h3><p>Để chia sẻ tệp và thư mục trên mạng cục bộ, bạn cần thực hiện các bước sau đây đúng hay sai?</p>
+<div class="tfitem" data-key="D"><div><b>a)</b> Thiết lập chế độ mạng riêng.</div><label><input name="tf7a" type="radio" value="D"/> Đúng</label><label><input name="tf7a" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="D"><div><b>b)</b> Thiết lập chia sẻ thư mục công cộng.</div><label><input name="tf7b" type="radio" value="D"/> Đúng</label><label><input name="tf7b" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="S"><div><b>c)</b> Bật tường lửa để bảo vệ an ninh mạng.</div><label><input name="tf7c" type="radio" value="D"/> Đúng</label><label><input name="tf7c" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="D"><div><b>d)</b> Cho phép các máy khác trong mạng có thể phát hiện và chia sẻ tệp.</div><label><input name="tf7d" type="radio" value="D"/> Đúng</label><label><input name="tf7d" type="radio" value="S"/> Sai</label></div>
+</section>
+<section><h3>Câu 8</h3><p>Trong một phòng máy ở một công ty, người quản lí muốn chia sẻ một thư mục trong đó chứa các thông báo và quyết định để nhân viên có thể xem được. 
+Sau đây là chế độ phân quyền phù hợp khi chia sẻ thư mục.</p>
+<div class="tfitem" data-key="S"><div><b>a)</b> Không cần cài đặt chế độ.</div><label><input name="tf8a" type="radio" value="D"/> Đúng</label><label><input name="tf8a" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="S"><div><b>b)</b> Change.</div><label><input name="tf8b" type="radio" value="D"/> Đúng</label><label><input name="tf8b" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="S"><div><b>c)</b> Full Control.</div><label><input name="tf8c" type="radio" value="D"/> Đúng</label><label><input name="tf8c" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="D"><div><b>d)</b> Read.</div><label><input name="tf8d" type="radio" value="D"/> Đúng</label><label><input name="tf8d" type="radio" value="S"/> Sai</label></div>
+</section>
+<section><h3>Câu 9</h3><p>Một bạn học sinh cần thực hiện in bài làm của mình thông qua một máy in đã được chia sẻ trong mạng LAN ở phòng thực hành Tin học. Các bước bạn học sinh đã thực hiện bao gồm:
+Bước 1: Kết nối máy tính vào mạng phù hợp.
+Bước 2: Tìm máy in trong mạng.
+Bước 3: Thêm máy in.
+Bước 4:
+Bước 5: Kiểm tra kết nối và in thử.
+Phương án nào sau đây là phù hợp nhất để điền vào Bước 4?</p>
+<div class="tfitem" data-key="S"><div><b>a)</b> Lựa chọn thư mục cần chia sẻ.</div><label><input name="tf9a" type="radio" value="D"/> Đúng</label><label><input name="tf9a" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="S"><div><b>b)</b> Kết nối máy tính với Access Point.</div><label><input name="tf9b" type="radio" value="D"/> Đúng</label><label><input name="tf9b" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="S"><div><b>c)</b> Đặt máy tính gần máy in.</div><label><input name="tf9c" type="radio" value="D"/> Đúng</label><label><input name="tf9c" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="D"><div><b>d)</b> Cài đặt driver máy in (nếu chưa cài đặt).</div><label><input name="tf9d" type="radio" value="D"/> Đúng</label><label><input name="tf9d" type="radio" value="S"/> Sai</label></div>
+</section>
+<section><h3>Câu 10</h3><p>Mạng máy tính sử dụng sóng điện tử để truyền thông tin được gọi là mạng không dây. Mạng không dây hoạt động trong phạm vi nhỏ được gọi là mạng Wi-Fi (còn gọi là mạng LAN không dây hay mạng cục bộ không dây). Wi-Fi sử dụng một thiết bị Access Point (còn được gọi là Điểm truy cập không dây) để cung cấp kết nối không dây cho các máy trạm trong mạng cục bộ. Vai trò của Access Point trong mạng Wi-Fi tương tự như vai trò của thiết bị Switch trong mạng có dây. Để truy cập vào Internet bằng mạng Wi-Fi, không cần dây mạng và cổng cắm cáp mạng. Tuy nhiên, mức độ bảo mật và tốc độ truyền của mạng Wi-Fi không bằng mạng có dây.
+Sau khi đọc nhận xét trên, một số bạn học sinh đưa ra các ý kiến sau:</p>
+<div class="tfitem" data-key="D"><div><b>a)</b> Để có thể chia sẻ tài nguyên qua mạng Wi-Fi cần kết nối các máy tính với nhau qua mạng.</div><label><input name="tf10a" type="radio" value="D"/> Đúng</label><label><input name="tf10a" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="S"><div><b>b)</b> Muốn chia sẻ máy in với nhau qua internet bắt buộc phải dùng dây cáp.</div><label><input name="tf10b" type="radio" value="D"/> Đúng</label><label><input name="tf10b" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="D"><div><b>c)</b> Mỗi thiết bị tham gia internet đều phải có địa chỉ IP .</div><label><input name="tf10c" type="radio" value="D"/> Đúng</label><label><input name="tf10c" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="S"><div><b>d)</b> Vai trò của Access Point tương tự như vai trò của thiết bị Switch, vì vậy hai thiết bị này có thể thay thế lẫn nhau.</div><label><input name="tf10d" type="radio" value="D"/> Đúng</label><label><input name="tf10d" type="radio" value="S"/> Sai</label></div>
+</section>
+<section><h3>Câu 11</h3><p>Trong một phòng máy các máy tính đã được lắp đặt đường dây mạng LAN, và Laptop của giáo viên có thể kết nối mạng trong phòng máy thông qua Wi-Fi. Sau giờ thực hành chia sẻ tài nguyên trên mạng, một số bạn học sinh nhận định như sau:</p>
+<div class="tfitem" data-key="S"><div><b>a)</b> Các máy tính không có kết nối Internet thì không thể chia sẻ tệp và thư mục được.</div><label><input name="tf11a" type="radio" value="D"/> Đúng</label><label><input name="tf11a" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="S"><div><b>b)</b> Laptop không thể chia sẻ tệp hay thư mục với các máy tính trong phòng máy do laptop kết nối không dây.</div><label><input name="tf11b" type="radio" value="D"/> Đúng</label><label><input name="tf11b" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="D"><div><b>c)</b> Có thể chia sẻ tệp và thư mục trên mạng LAN (có dây hoặc không dây) khi thiết lập môi trường chia sẻ tệp và máy in cho người dùng trong mạng cục bộ.</div><label><input name="tf11c" type="radio" value="D"/> Đúng</label><label><input name="tf11c" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="S"><div><b>d)</b> Để chia sẻ thư mục Bài thực hành trên máy tính với quyền sửa cho các máy tính khác trong phòng máy, cần phải cấp duy nhất quyền Read với người dùng Everyone.</div><label><input name="tf11d" type="radio" value="D"/> Đúng</label><label><input name="tf11d" type="radio" value="S"/> Sai</label></div>
+</section>
+<section><h3>Câu 12</h3><p>Gia đình của một học sinh trang bị 1 máy tính để bàn và 2 máy tính xách tay nhằm phục vụ công việc của bố mẹ và việc học tập của bạn học sinh. Để thuận tiện trong việc kết nối và chia sẻ dữ liệu, các thiết bị này thường được liên kết với nhau qua bộ định tuyến không dây. Ngoài ra, bố mẹ còn thường xuyên sử dụng điện thoại di động để truy cập Internet thông qua mạng không dây này.
+Một học sinh đưa ra nhận định sau:</p>
+<div class="tfitem" data-key="D"><div><b>a)</b> Bộ định tuyến không dây có thể kết nối được nhiều thiết bị với nhau.</div><label><input name="tf12a" type="radio" value="D"/> Đúng</label><label><input name="tf12a" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="D"><div><b>b)</b> Lợi ích của việc trang bị bộ định tuyến: thuận tiện trong việc chia sẻ dữ liệu và phục vụ cho học tập cũng như công việc.</div><label><input name="tf12b" type="radio" value="D"/> Đúng</label><label><input name="tf12b" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="S"><div><b>c)</b> Thiết bị đầu, cuối và các thiết bị kết nối trong mô hình mạng là: 2 máy tính để bàn, 1 máy tính xách tay, điện thoại di động.</div><label><input name="tf12c" type="radio" value="D"/> Đúng</label><label><input name="tf12c" type="radio" value="S"/> Sai</label></div>
+<div class="tfitem" data-key="S"><div><b>d)</b> Nếu gia đình của học sinh quyết định nâng cấp bộ định tuyến không dây để cải thiện tốc độ Internet cho việc làm việc từ xa và học tập nên nâng cấp tốc độ và phạm vi phủ sóng, khả năng bảo mật không quan trọng.</div><label><input name="tf12d" type="radio" value="D"/> Đúng</label><label><input name="tf12d" type="radio" value="S"/> Sai</label></div>
+</section>
+<section class="warn">Ghi chú biên tập: Câu trắc nghiệm 6 và 10 đã được chỉnh cách hỏi/phương án để có đáp án xác định; Câu Đúng – Sai 2 đã bổ sung dữ kiện tình huống, Câu 4b đã viết lại để tránh mơ hồ. Đây là các câu biên tập từ tài liệu, cần giáo viên duyệt trước khi sử dụng chính thức. Các câu khác giữ nguyên. Câu 32 cần đối chiếu cách diễn đạt về tường lửa.</section></main><script>
+function clear(root){root.querySelectorAll('.correct,.wrong').forEach(e=>e.classList.remove('correct','wrong'));root.querySelectorAll('.feedback').forEach(e=>e.remove())}
+function gradeMC(){let a=0,c=0,v=0,u=0;document.querySelectorAll('.mc').forEach(card=>{clear(card);const k=card.dataset.key,s=card.querySelector('input:checked');if(s)a++;const msg=document.createElement('div');msg.className='feedback';if(!k){u++;msg.classList.add('unverified');msg.textContent='Chưa xác minh được đáp án – không tính điểm.'}else{v++;const right=card.querySelector('input[value="'+k+'"]');if(right)right.closest('label').classList.add('correct');if(s){if(s.value===k)c++;else s.closest('label').classList.add('wrong')}msg.textContent='Đáp án tham khảo: '+k+'.'}card.appendChild(msg)});document.getElementById('mcscore').textContent=' Đã chọn '+a+'/37 · Đúng '+c+'/'+v+' · Cần xác minh '+u+' câu.'}
+function gradeTF(){let a=0,c=0,v=0,u=0;document.querySelectorAll('.tfitem').forEach(card=>{clear(card);const k=card.dataset.key,s=card.querySelector('input:checked');if(s)a++;const msg=document.createElement('div');msg.className='feedback';if(!k){u++;msg.classList.add('unverified');msg.textContent='Chưa xác minh được đáp án – không tính điểm.'}else{v++;const right=card.querySelector('input[value="'+k+'"]');if(right)right.closest('label').classList.add('correct');if(s){if(s.value===k)c++;else s.closest('label').classList.add('wrong')}msg.textContent='Đáp án tham khảo: '+(k==='D'?'Đúng':'Sai')+'.'}card.appendChild(msg)});document.getElementById('tfscore').textContent=' Đã chọn '+a+'/48 ý · Đúng '+c+'/'+v+' · Cần xác minh '+u+' ý.'}
+function resetMC(){document.querySelectorAll('.mc').forEach(card=>{clear(card);card.querySelectorAll('input').forEach(x=>x.checked=false)});document.getElementById('mcscore').textContent=''}
+function resetTF(){document.querySelectorAll('.tfitem').forEach(card=>{clear(card);card.querySelectorAll('input').forEach(x=>x.checked=false)});document.getElementById('tfscore').textContent=''}
+</script></body></html>
